@@ -16,16 +16,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button viewNews = findViewById(R.id.btnNews);
+        Button viewWeather = findViewById(R.id.btnWeather);
         viewNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openNews();
             }
         });
+
+        viewWeather.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {openWeather();}
+        });
     }
 
     public void openNews(){
-        Intent intent = new Intent(this, NewsPages.class);
-        startActivity(intent);
+        Intent intentOpenNews = new Intent(this, NewsPages.class);
+        startActivity(intentOpenNews);
+    }
+
+    public void openWeather(){
+        Intent intentOpenWeather = new Intent(this, weatherForecast.class);
+        startActivity(intentOpenWeather);
     }
 }
