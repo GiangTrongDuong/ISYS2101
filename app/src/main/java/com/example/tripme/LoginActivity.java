@@ -3,6 +3,7 @@ package com.example.tripme;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,15 +24,20 @@ import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    private DatabaseReference myRef = database.getReference("Users");
+    private User user;
     String email = "";
     String password = "";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
-//        DatabaseReference myRef = database.getReference("message");
+//        FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
+//        DatabaseReference myRef = database.getReference("Users");
 
         EditText editTextEmail = findViewById(R.id.editTextEmail);
         EditText editTextPassword = findViewById(R.id.editTextPassword);
@@ -40,16 +46,21 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        Intent intentSignup = new Intent(this, SignupActivity.class);
+
+//        Intent intentRoleSelection = new Intent(this, RoleSelectionActivity.class);
+
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 email = editTextEmail.getText().toString();
                 password = editTextPassword.getText().toString();
-                if(email.equals(null) || password.equals(null)) {
-                    signIn(email, password);
-                } else {
+                if(email.equals("") || password.equals("")) {
                     Toast.makeText(LoginActivity.this, "Invalid information.",
                             Toast.LENGTH_SHORT).show();
+                } else {
+                    signIn(email, password);
+
                 }
             }
         });
@@ -59,7 +70,9 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 email = editTextEmail.getText().toString();
                 password = editTextPassword.getText().toString();
-                signUp(email, password);
+                intentSignup.putExtra("email", email);
+                intentSignup.putExtra("password", password);
+                startActivity(intentSignup);
             }
         });
     }
@@ -72,6 +85,7 @@ public class LoginActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(LoginActivity.this, "Authentication succeed.",
                                     Toast.LENGTH_SHORT).show();
+                            updateUI(user);
                         } else {
                             Toast.makeText(LoginActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
@@ -79,20 +93,28 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
     }
-    private void signUp(String email, String password) {
-        mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(LoginActivity.this, "Account created.",
-                                    Toast.LENGTH_SHORT).show();
-                            FirebaseUser user = mAuth.getCurrentUser();
-                        } else {
-                            Toast.makeText(LoginActivity.this, "Failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+    public void updateUI(FirebaseUser currentUser) {
+        Intent intentRoleSelection = new Intent(this, RoleSelectionActivity.class);
+        myRef.child(currentUser.getUid()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                user = new User(snapshot.child("name").getValue().toString(),
+                        snapshot.child("email").getValue().toString(),
+                        snapshot.child("role").getValue().toString(),
+                        snapshot.child("tripID").getValue().toString(),
+                        snapshot.child("phone").getValue().toString());
+                if (user.getRole().equals("")){
+                    startActivity(intentRoleSelection);
+                } else {
+                    Toast.makeText(LoginActivity.this, user.getRole(),
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 }
