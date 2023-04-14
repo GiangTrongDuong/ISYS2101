@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button viewNews = findViewById(R.id.btnNews);
         Button viewWeather = findViewById(R.id.btnWeather);
+        Button viewMap = findViewById(R.id.buttonMap);
+
         viewNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {openWeather();}
         });
+
+        viewMap.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {openMap();}
+        });
     }
 
     public void openNews(){
@@ -38,5 +45,10 @@ public class MainActivity extends AppCompatActivity {
     public void openWeather(){
         Intent intentOpenWeather = new Intent(this, weatherForecast.class);
         startActivity(intentOpenWeather);
+    }
+
+    public void openMap(){
+        Intent intentOpenMap = new Intent(this, MapsActivity.class);
+        startActivity(intentOpenMap);
     }
 }
