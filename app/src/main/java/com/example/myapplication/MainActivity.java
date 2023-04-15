@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {openWeather();}
         });
 
-        viewMap.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {openMap();}
-        });
+//        viewMap.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {openMap();}
+//        });
     }
 
     public void openNews(){
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentOpenWeather);
     }
 
-    public void openMap(){
-        Intent intentOpenMap = new Intent(this, MapsActivity.class);
-        startActivity(intentOpenMap);
-    }
+//    public void openMap(){
+//        Intent intentOpenMap = new Intent(this, MapsActivity.class);
+//        startActivity(intentOpenMap);
+//    }
 }

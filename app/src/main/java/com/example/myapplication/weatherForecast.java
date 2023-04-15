@@ -35,7 +35,7 @@ public class weatherForecast extends AppCompatActivity {
     private final String urlSm = "http://api.openweathermap.org/data/2.5/weather";
     private final String apiKey = "eb1a770f8e3624d1aebc453838659acd";
     DecimalFormat df = new DecimalFormat("#.##");
-    String[] city = {"Bac Lieu","Ben Thuy","Ben Tre","Bien Hoa","Buon Me Thuot","Cam Ranh","Can Tho"};
+    String[] city = {"Bac Lieu","Ben Thuy","Ben Tre","Bien Hoa","Buon Me Thuot","Cam Ranh","Can Tho","Cao Lanh","Cho Lon","Con Son","Da Lat","Da Nang","Ha Long","Hai Duong","Haiphong","Hanoi","Ho Chi Minh City","Hoa Binh","Hue","Kon Tum","Lao Cai","Long Xuyen","My Tho","Nam Dinh","Nha Trang","Phan Thiet","Pleiku","Quang Ngai","Qui Nhon","Rach Gia","Sa Dec","Tay Ninh","Thai Binh","Thai Nguyen","Thanh Hoa","Thu Dau Mot","Tuy Hoa","Vinh","Vinh Long","Vung Tau"};
     AutoCompleteTextView autoCompleteTxt;
     ArrayAdapter<String> adapterItems;
     String citySelected;
