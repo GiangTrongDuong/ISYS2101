@@ -37,23 +37,23 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/buttonManager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
-        android:padding="20dp"
-        android:background="@drawable/textbox">
+        android:background="@drawable/textbox"
+        android:padding="20dp">
 
         <TextView
-            android:id="@+id/buttonManager"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/jurrasic"
             android:text=" MANAGER "
             android:textColor="@color/text"
-            android:textSize="70sp"/>
+            android:textSize="70sp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -71,6 +71,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/buttonParticipant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -80,7 +81,6 @@
         android:background="@drawable/textbox">
 
         <TextView
-            android:id="@+id/buttonParticipant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
