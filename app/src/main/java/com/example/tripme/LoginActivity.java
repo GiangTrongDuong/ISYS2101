@@ -45,11 +45,14 @@ public class LoginActivity extends AppCompatActivity {
         Button buttonSignup = findViewById(R.id.buttonSignup);
 
         mAuth = FirebaseAuth.getInstance();
+        //Check if logged in
+        if (mAuth.getCurrentUser() != null){
+            updateUI(mAuth.getCurrentUser());
+        }
 
         Intent intentSignup = new Intent(this, SignupActivity.class);
 
-//        Intent intentRoleSelection = new Intent(this, RoleSelectionActivity.class);
-
+        //Button Login
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,6 +68,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //Button Signup
         buttonSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,6 +80,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
+    //Login method
     private void signIn(String email, String password) {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -95,6 +101,8 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void updateUI(FirebaseUser currentUser) {
         Intent intentRoleSelection = new Intent(this, RoleSelectionActivity.class);
+        Intent intentManager = new Intent(this, TripCreationActivity.class);
+        Intent intentManagerMain = new Intent(this, MainActivity.class);
         myRef.child(currentUser.getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -106,8 +114,16 @@ public class LoginActivity extends AppCompatActivity {
                 if (user.getRole().equals("")){
                     startActivity(intentRoleSelection);
                 } else {
-                    Toast.makeText(LoginActivity.this, user.getRole(),
-                            Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(LoginActivity.this, user.getRole(),
+//                            Toast.LENGTH_SHORT).show();
+                    if (user.getRole().equals("Manager")) {
+                        if (user.getTripID().equals("")){
+                            startActivity(intentManager);
+                        } else {
+                            intentManagerMain.putExtra("tripID", user.getTripID());
+                            startActivity(intentManagerMain);
+                        }
+                    }
                 }
             }
 

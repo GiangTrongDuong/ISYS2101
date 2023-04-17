@@ -29,17 +29,18 @@
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
         android:background="@drawable/layout_top">
+
         <EditText
             android:id="@+id/editTextEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/textbox"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="Email"
-            android:textSize="20sp"
-            android:background="@drawable/textbox"/>
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
