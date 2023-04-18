@@ -17,11 +17,18 @@ import com.example.tripme.databinding.FragmentChecklistBinding;
 import com.example.tripme.MainActivity;
 import com.example.tripme.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.awt.font.TextAttribute;
 
 public class ChecklistFragment extends Fragment {
     private FragmentChecklistBinding binding;
+    private FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    private DatabaseReference myRef = database.getReference("Trips");
     ImageButton buttonLogout;
     TextView textViewTripID;
 
@@ -37,11 +44,22 @@ public class ChecklistFragment extends Fragment {
         binding = FragmentChecklistBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         Intent intent = getActivity().getIntent();
+        String tripID = intent.getExtras().getString("tripID");
         textViewTripID = (TextView) view.findViewById(R.id.textViewTripCode);
-        textViewTripID.setText(intent.getExtras().getString("tripID"));
+        textViewTripID.setText(tripID);
         // Set the adapter
         checklist = root.findViewById(R.id.checklist);
+        myRef.child(tripID).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
 
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
 
         buttonLogout = view.findViewById(R.id.buttonLogout);
