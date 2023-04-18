@@ -50,8 +50,8 @@ public class GridElementAdapter extends ArrayAdapter {
         View v = convertView;
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         v = inflater.inflate(R.layout.grid_element, null);
-        TextView itemNameView = (TextView) v.findViewById(R.id.temperature);
-        TextView itemTimeView = (TextView) v.findViewById(R.id.time);
+        TextView itemNameView = (TextView) v.findViewById(R.id.txtTemp);
+        TextView itemTimeView = (TextView) v.findViewById(R.id.txtTime);
 
         itemNameView.setText(itemList.get(position).getitemName());
         itemTimeView.setText(itemList.get(position).getitemTime());
