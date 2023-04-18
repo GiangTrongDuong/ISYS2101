@@ -35,7 +35,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
 //        FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
 //        DatabaseReference myRef = database.getReference("Users");
 
@@ -112,12 +111,14 @@ public class LoginActivity extends AppCompatActivity {
                         snapshot.child("tripID").getValue().toString(),
                         snapshot.child("phone").getValue().toString());
                 if (user.getRole().equals("")){
+                    intentRoleSelection.putExtra("phone", user.getPhone());
                     startActivity(intentRoleSelection);
                 } else {
 //                    Toast.makeText(LoginActivity.this, user.getRole(),
 //                            Toast.LENGTH_SHORT).show();
                     if (user.getRole().equals("Manager")) {
                         if (user.getTripID().equals("")){
+                            intentManager.putExtra("phone", user.getPhone());
                             startActivity(intentManager);
                         } else {
                             intentManagerMain.putExtra("tripID", user.getTripID());

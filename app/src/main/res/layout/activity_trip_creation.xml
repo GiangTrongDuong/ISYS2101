@@ -25,11 +25,6 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="40dp"
@@ -37,10 +32,29 @@
         android:padding="20dp">
 
         <EditText
-            android:background="@drawable/textbox"
+            android:id="@+id/editTextTripName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/textbox"
             android:hint="Trip name"
+            android:textColorHint="@color/text"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/box_dark"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/editTextTripLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textbox"
+            android:hint="Trip destination"
             android:textColorHint="@color/text"
             android:textSize="20sp" />
     </RelativeLayout>
@@ -54,14 +68,15 @@
         android:background="@color/box_dark">
 
         <EditText
+            android:id="@+id/editTextTripInformation"
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:background="@drawable/textbox"
+            android:gravity="top"
             android:hint="Trip information"
-            android:textColorHint="@color/text"
-            android:textSize="20sp"
             android:inputType="text|textMultiLine"
-            android:gravity="top"/>
+            android:textColorHint="@color/text"
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <RelativeLayout
