@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.GridView;
+import android.widget.HorizontalScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -48,6 +49,7 @@ public class weatherForecast extends AppCompatActivity {
     TextView result;
     TextView location, temperature, weather, feels_like, min_temp, max_temp, advice, box1, box2, box3;
     GridView gridList;
+    HorizontalScrollView gridlistLayout;
     ArrayList<Item> itemList = new ArrayList<>();
 
     @Override
@@ -56,8 +58,6 @@ public class weatherForecast extends AppCompatActivity {
         setContentView(R.layout.activity_weather_forecast);
         gridList = (GridView) findViewById(R.id.gridView);
         GridElementAdapter gridAdapter = new GridElementAdapter(this, R.layout.grid_element, itemList);
-
-        //Remove result
         location = findViewById(R.id.location);
         temperature = findViewById(R.id.temperature);
         weather = findViewById(R.id.weather);
@@ -68,12 +68,13 @@ public class weatherForecast extends AppCompatActivity {
         box1 = findViewById(R.id.box1);
         box2 = findViewById(R.id.box2);
         box3 = findViewById(R.id.box3);
-
         gridList = (GridView) findViewById(R.id.gridView);
+        gridlistLayout = findViewById(R.id.gridlistLayout);
+        //Hide everything
+        showAndHideGUI(false);
+
         autoCompleteTxt = findViewById(R.id.auto_complete_txt);
-
         adapterItems = new ArrayAdapter<>(this,R.layout.list_city,city);
-
         autoCompleteTxt.setAdapter(adapterItems);
         autoCompleteTxt.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -81,6 +82,8 @@ public class weatherForecast extends AppCompatActivity {
                 citySelected = parent.getItemAtPosition(position).toString();
                 getWeatherDetails();
                 getWeatherToday();
+                //Show everything
+                showAndHideGUI(true);
             }
         });
         gridList.setAdapter(gridAdapter);
@@ -140,11 +143,11 @@ public class weatherForecast extends AppCompatActivity {
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
             requestQueue.add(stringRequest);
     }
-public void getWeatherDetails(){
-    String tempUrl = "";
-    tempUrl = url + "?q=" + citySelected + "&appid=" + apiKey;
-    itemList.clear();
-    StringRequest stringRequest = new StringRequest(Request.Method.POST, tempUrl, new Response.Listener<String>() {
+    public void getWeatherDetails(){
+        String tempUrl = "";
+        tempUrl = url + "?q=" + citySelected + "&appid=" + apiKey;
+        itemList.clear();
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, tempUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Log.d("response", response);
@@ -171,7 +174,7 @@ public void getWeatherDetails(){
 //                        JSONArray weatherlist0 = day0.getJSONArray("weather");
 //                        JSONObject fl0 = weatherlist0.getJSONObject(0);
 //                        int weatherid0 = fl0.getInt("id");
-                        String tempStr = ds.format(temp0);
+                        String tempStr = ds.format(temp0) + "°C";
                         itemList.add(new Item(tempStr,timeFinal));
 
                     }
@@ -190,5 +193,35 @@ public void getWeatherDetails(){
         });
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         requestQueue.add(stringRequest);
-}
+    }
+
+    public void showAndHideGUI(boolean bool){
+        if (bool){
+            location.setVisibility(View.VISIBLE);
+            temperature.setVisibility(View.VISIBLE);
+            weather.setVisibility(View.VISIBLE);
+            feels_like.setVisibility(View.VISIBLE);
+            min_temp.setVisibility(View.VISIBLE);
+            max_temp.setVisibility(View.VISIBLE);
+            advice.setVisibility(View.VISIBLE);
+            box1.setVisibility(View.VISIBLE);
+            box2.setVisibility(View.VISIBLE);
+            box3.setVisibility(View.VISIBLE);
+            gridList.setVisibility(View.VISIBLE);
+            gridlistLayout.setVisibility(View.VISIBLE);
+        } else {
+            location.setVisibility(View.INVISIBLE);
+            temperature.setVisibility(View.INVISIBLE);
+            weather.setVisibility(View.INVISIBLE);
+            feels_like.setVisibility(View.INVISIBLE);
+            min_temp.setVisibility(View.INVISIBLE);
+            max_temp.setVisibility(View.INVISIBLE);
+            advice.setVisibility(View.INVISIBLE);
+            box1.setVisibility(View.INVISIBLE);
+            box2.setVisibility(View.INVISIBLE);
+            box3.setVisibility(View.INVISIBLE);
+            gridList.setVisibility(View.INVISIBLE);
+            gridlistLayout.setVisibility(View.INVISIBLE);
+        }
+    }
 }

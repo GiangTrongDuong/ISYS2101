@@ -135,7 +135,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Wind speed"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/text"/>
 
         <TextView
             android:background="@drawable/box"
@@ -148,7 +149,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Humidiy"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/text" />
         <TextView
             android:background="@drawable/box"
             android:layout_margin="10dp"
@@ -160,14 +162,18 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="Cloudy"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textColor="@color/text" />
     </LinearLayout>
 
     <HorizontalScrollView
+        android:id="@+id/gridlistLayout"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seatLegendLayout">
+        android:layout_below="@+id/seatLegendLayout"
+        android:background="@drawable/box"
+        android:layout_margin="10dp">
 
         <FrameLayout
             android:layout_width="fill_parent"

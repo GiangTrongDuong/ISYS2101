@@ -74,7 +74,7 @@ public class weatherForecastDetails extends AppCompatActivity {
                         }
 
 
-                        resultWeather.setText(output);
+//                        resultWeather.setText(output);
                     } catch (JSONException e) {
                         throw new RuntimeException(e);
                     }
