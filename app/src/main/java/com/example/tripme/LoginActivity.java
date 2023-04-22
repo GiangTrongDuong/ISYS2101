@@ -102,6 +102,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent intentRoleSelection = new Intent(this, RoleSelectionActivity.class);
         Intent intentManager = new Intent(this, TripCreationActivity.class);
         Intent intentManagerMain = new Intent(this, MainActivity.class);
+        Intent intentParticipant =new Intent(this, TripJoiningActivity.class);
         myRef.child(currentUser.getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -124,6 +125,10 @@ public class LoginActivity extends AppCompatActivity {
                             intentManagerMain.putExtra("tripID", user.getTripID());
                             startActivity(intentManagerMain);
                         }
+                    } else { //Not manager and not empty = participant
+                        intentParticipant.putExtra("phone", user.getPhone());
+                        intentParticipant.putExtra("name", user.getName());
+                        startActivity(intentParticipant);
                     }
                 }
             }

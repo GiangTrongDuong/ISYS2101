@@ -24,6 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.awt.font.TextAttribute;
+import java.util.ArrayList;
 
 public class ChecklistFragment extends Fragment {
     private FragmentChecklistBinding binding;
@@ -31,8 +32,8 @@ public class ChecklistFragment extends Fragment {
     private DatabaseReference myRef = database.getReference("Trips");
     ImageButton buttonLogout;
     TextView textViewTripID;
-
     ListView checklist;
+    ArrayList<Participant> participantList = new ArrayList<>();
 
     public ChecklistFragment() {
     }
@@ -48,19 +49,24 @@ public class ChecklistFragment extends Fragment {
         textViewTripID = (TextView) view.findViewById(R.id.textViewTripCode);
         textViewTripID.setText(tripID);
         // Set the adapter
-        checklist = root.findViewById(R.id.checklist);
-        myRef.child(tripID).addValueEventListener(new ValueEventListener() {
+        checklist = view.findViewById(R.id.checklist);
+        ChecklistAdapter listAdapter = new ChecklistAdapter(inflater.getContext(), R.layout.fragment_checklist, participantList);
+        checklist.setAdapter(listAdapter);
+        myRef.child(tripID).child("participant").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-
+                participantList.clear();
+                for (DataSnapshot dsp : snapshot.getChildren()){
+                    participantList.add(new Participant(dsp.child("participantName").getValue().toString(),
+                            dsp.child("participantName").getValue().toString(),
+                            dsp.child("participantName").getValue().toString()));
+                    checklist.invalidateViews();
+                }
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
-
 
         buttonLogout = view.findViewById(R.id.buttonLogout);
         buttonLogout.setOnClickListener(new View.OnClickListener() {
@@ -72,4 +78,5 @@ public class ChecklistFragment extends Fragment {
         });
         return view;
     }
+
 }

@@ -24,10 +24,19 @@ public class RoleSelectionActivity extends AppCompatActivity {
         DatabaseReference myRef = database.getReference("Users");
         Intent i = new Intent(RoleSelectionActivity.this, TripCreationActivity.class);
         buttonManager = findViewById(R.id.buttonManager);
+        buttonParticipant = findViewById(R.id.buttonParticipant);
         buttonManager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 myRef.child(mAuth.getCurrentUser().getUid()).child("role").setValue("Manager");
+                i.putExtra("phone", getIntent().getExtras().getString("phone"));
+                startActivity(i);
+            }
+        });
+        buttonParticipant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myRef.child(mAuth.getCurrentUser().getUid()).child("role").setValue("Participant");
                 i.putExtra("phone", getIntent().getExtras().getString("phone"));
                 startActivity(i);
             }
