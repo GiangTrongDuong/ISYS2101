@@ -17,4 +17,10 @@
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 
+    <fragment
+        android:id="@+id/navigation_triptool"
+        android:name="com.example.tripme.TripToolsFragment"
+        android:label="@string/tools"
+        tools:layout="@layout/fragment_trip_tools" />
+
 </navigation>

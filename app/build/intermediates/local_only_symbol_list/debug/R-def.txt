@@ -23,13 +23,22 @@ drawable ic_launcher_foreground
 drawable icon
 drawable layout_bot
 drawable layout_top
+drawable map
+drawable news
 drawable notification_icon
 drawable phone_icon
 drawable profile_icon
 drawable textbox
+drawable tools_icon
+drawable weather
+drawable weather_button
 font african
 font cinderela
 font jurrasic
+id box1
+id box2
+id box3
+id box4
 id buttonCreate
 id buttonJoin
 id buttonLogin
@@ -54,6 +63,7 @@ id nav_host_fragment_activity_main
 id nav_view
 id navigation_checklist
 id navigation_profile
+id navigation_triptool
 id otp_edit_box1
 id otp_edit_box2
 id otp_edit_box3
@@ -73,6 +83,7 @@ layout activity_trip_joining
 layout fragment_checklist
 layout fragment_checklist_list
 layout fragment_profile
+layout fragment_trip_tools
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -94,6 +105,7 @@ string second_fragment_label
 string title_activity_trip_creation
 string title_checklist
 string title_profile
+string tools
 style Theme.TripMe
 style Theme.TripMe.AppBarOverlay
 style Theme.TripMe.NoActionBar

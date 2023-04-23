@@ -2603,6 +2603,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable map
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2624,6 +2625,7 @@ drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_overlay
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable news
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -2642,8 +2644,11 @@ drawable profile_icon
 drawable test_custom_background
 drawable test_level_drawable
 drawable textbox
+drawable tools_icon
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable weather
+drawable weather_button
 font african
 font cinderela
 font jurrasic
@@ -2749,6 +2754,10 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id box1
+id box2
+id box3
+id box4
 id browser_actions_header_text
 id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
@@ -2986,6 +2995,7 @@ id navigation_bar_item_small_label_view
 id navigation_checklist
 id navigation_header_container
 id navigation_profile
+id navigation_triptool
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3294,6 +3304,7 @@ layout design_text_input_start_icon
 layout fragment_checklist
 layout fragment_checklist_list
 layout fragment_profile
+layout fragment_trip_tools
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3552,6 +3563,7 @@ string status_bar_notification_info_overflow
 string title_activity_trip_creation
 string title_checklist
 string title_profile
+string tools
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

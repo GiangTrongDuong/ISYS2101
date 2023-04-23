@@ -30,6 +30,7 @@
     <string name="title_activity_trip_creation">TripCreationActivity</string>
     <string name="title_checklist">Checklist</string>
     <string name="title_profile">Profile</string>
+    <string name="tools">Tools</string>
     <style name="Theme.TripMe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
