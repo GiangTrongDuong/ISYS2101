@@ -1,0 +1,366 @@
+[
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xhdpi_check_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xhdpi\\check_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxhdpi_notification_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxhdpi\\notification_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-ldpi_notification_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-ldpi\\notification_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-hdpi_check_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-hdpi\\check_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable_textbox.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\drawable\\textbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxhdpi_baseline_logout_24.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxhdpi\\baseline_logout_24.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-mdpi_cross_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-mdpi\\cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxhdpi_cross_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxhdpi\\cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-mdpi_phone_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-mdpi\\phone_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable_layout_bot.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\drawable\\layout_bot.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxxhdpi_phone_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxxhdpi\\phone_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v21_profile_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v21\\profile_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-ldpi_cross_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-ldpi\\cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-ldpi_baseline_logout_24.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-ldpi\\baseline_logout_24.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxxhdpi_profile_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxxhdpi\\profile_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\font_african.ttf.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\font\\african.ttf"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\layout_fragment_checklist_list.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_checklist_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v21_phone_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v21\\phone_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-ldpi_phone_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-ldpi\\phone_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-hdpi_profile_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-hdpi\\profile_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\font_jurrasic.ttf.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\font\\jurrasic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xhdpi_profile_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xhdpi\\profile_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xhdpi_arrow_back.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xhdpi\\arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxhdpi_phone_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxhdpi\\phone_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\font_cinderela.ttf.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\font\\cinderela.ttf"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v21_check_circle.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v21\\check_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\layout_fragment_checklist.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_checklist.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-hdpi_baseline_logout_24.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-hdpi\\baseline_logout_24.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxxhdpi_check_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxxhdpi\\check_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-hdpi_notification_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-hdpi\\notification_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\layout_activity_role_selection.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_role_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable_bottom_navbar_color.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\drawable\\bottom_navbar_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxhdpi_check_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxhdpi\\check_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-ldpi_check_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-ldpi\\check_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxxhdpi_notification_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxxhdpi\\notification_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-hdpi_cross_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-hdpi\\cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-mdpi_baseline_logout_24.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-mdpi\\baseline_logout_24.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v21_notification_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v21\\notification_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.tripme.app-merged_res-47:/layout_activity_trip_joining.xml.flat",
+        "source": "com.example.tripme.app-main-49:/layout/activity_trip_joining.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\navigation_nav_bar.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\navigation\\nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xhdpi_cross_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xhdpi\\cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v21_baseline_logout_24.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v21\\baseline_logout_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxhdpi_arrow_back.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxhdpi\\arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxhdpi_profile_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxhdpi\\profile_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\layout_activity_trip_creation.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_trip_creation.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-mdpi_check_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-mdpi\\check_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable_layout_top.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\drawable\\layout_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xhdpi_notification_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xhdpi\\notification_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-ldpi_arrow_back.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-ldpi\\arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v21_arrow_back.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v21\\arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-mdpi_profile_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-mdpi\\profile_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-hdpi_arrow_back.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-hdpi\\arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxxhdpi_cross_circle.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxxhdpi\\cross_circle.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-hdpi_phone_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-hdpi\\phone_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v21_cross_circle.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v21\\cross_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-mdpi_arrow_back.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-mdpi\\arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xhdpi_phone_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xhdpi\\phone_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-ldpi_profile_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-ldpi\\profile_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxxhdpi_arrow_back.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxxhdpi\\arrow_back.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-mdpi_notification_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-mdpi\\notification_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xhdpi_baseline_logout_24.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xhdpi\\baseline_logout_24.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\drawable-xxxhdpi_baseline_logout_24.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-42:\\drawable-xxxhdpi\\baseline_logout_24.png"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-47:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\mipmap-mdpi\\ic_launcher_round.webp"
+    }
+]
