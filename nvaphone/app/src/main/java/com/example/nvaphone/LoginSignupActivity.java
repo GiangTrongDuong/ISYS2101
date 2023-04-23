@@ -38,8 +38,6 @@ public class LoginSignupActivity extends AppCompatActivity {
     //view binding
 //    private ActivityMainBinding binding;
     private EditText phone;
-    private EditText password;
-    private Button toSignup;
     private Button login;
     private TextView askOTP;
     private EditText otp;
@@ -61,8 +59,6 @@ public class LoginSignupActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         phone = findViewById(R.id.liPhone);
-        password = findViewById(R.id.liPassword);
-        toSignup = findViewById(R.id.liSignup);
         login = findViewById(R.id.liLogin);
         askOTP = findViewById(R.id.liAskOTP);
         otp = findViewById(R.id.liOTP);
@@ -70,13 +66,6 @@ public class LoginSignupActivity extends AppCompatActivity {
         resendOTP = findViewById(R.id.liResendOTP);
         linearInput = findViewById(R.id.liInput);
         linearOTP = findViewById(R.id.liLinearOTP);
-        toSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(LoginSignupActivity.this, UserInfoActivity.class));
-                finish();
-            }
-        });
 
         //init progress dialog so that it runs whenever we need
         pd = new ProgressDialog(this);
@@ -204,19 +193,20 @@ public class LoginSignupActivity extends AppCompatActivity {
 
                         //check if there is a record of this phone number in taken_phones
                         DatabaseReference ref = FirebaseDatabase.getInstance().getReference()
-                                .child("taken_phones").child(current_phone);
-                        ref.addValueEventListener(new ValueEventListener() {
+                                .child("taken_phones");
+                        ref.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                String exists = snapshot.getValue(String.class);
-                                //if the above succeeds -> phone exists -> go to profile
-                                startActivity(new Intent(LoginSignupActivity.this, ProfileActivity.class));
+                                if(snapshot.hasChild(current_phone)){ //phone exists -> to profile
+                                    startActivity(new Intent(LoginSignupActivity.this, ProfileActivity.class));
+                                }
+                                else {
+                                    startActivity(new Intent(LoginSignupActivity.this, UserInfoActivity.class).putExtra("com.example.nvaphone.PHONE", current_phone));
+                                }
                             }
-
                             @Override
                             public void onCancelled(@NonNull DatabaseError error) {
-                                //any error -> no phone in db -> fill form
-                                startActivity(new Intent(LoginSignupActivity.this, UserInfoActivity.class).putExtra("com.example.nvaphone.PHONE", current_phone));
+
                             }
                         });
                     }

@@ -10,17 +10,8 @@
         android:id="@+id/mainSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign up"
+        android:text="Sign up/Log in"
         android:layout_marginTop="250dp"
         android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:id="@+id/mainLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mainSignup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="Log in" />
 
 </RelativeLayout>

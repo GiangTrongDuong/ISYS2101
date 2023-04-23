@@ -54,12 +54,17 @@ public class ProfileActivity extends AppCompatActivity {
             phone.setText(userPhone);
 
             //get the user's name
-            DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child(userPhone);
+            DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("user").child(userPhone);
             ref.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     User userino = snapshot.getValue(User.class);
-                    name.setText(String.format("%s, email %s", userino.getName(), userino.getEmail()));
+                    try {
+                        name.setText(String.format(userino.getName() + ", email " + userino.getEmail()));
+                    }
+                    catch (NullPointerException e){
+                        System.out.println(""+e.getMessage());
+                    }
                 }
 
                 @Override

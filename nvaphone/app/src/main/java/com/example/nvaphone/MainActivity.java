@@ -9,10 +9,12 @@ import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
     private Button signup;
-    private Button login;
     FirebaseAuth auth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         signup = findViewById(R.id.mainSignup);
-        login = findViewById(R.id.mainLogin);
+
+        //createTestDB();
 
         FirebaseUser user = auth.getCurrentUser();
         if (user != null) {// User is signed in
@@ -32,12 +35,22 @@ public class MainActivity extends AppCompatActivity {
             // No user logged in yet -> to the Login/Sign up activity! Same thing anyway
             startActivity(new Intent(MainActivity.this, LoginSignupActivity.class));
         }
-        login.setOnClickListener(new View.OnClickListener() {
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, LoginSignupActivity.class));
                 finish();
             }
         });
+    }
+    public void createTestDB(){
+        String phonerino = "+8472718212";
+        //test user
+        HashMap<String, Object> userino =new HashMap<>();
+        userino.put("name", "viet anh");
+        userino.put("email", "sfsdf@gmail.com");
+        FirebaseDatabase.getInstance().getReference().child("user").child(phonerino).updateChildren(userino);
+        //test taken_phones
+        FirebaseDatabase.getInstance().getReference().child("taken_phones").child(phonerino).setValue("true");
     }
 }
