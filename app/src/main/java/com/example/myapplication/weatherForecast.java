@@ -98,6 +98,7 @@ public class weatherForecast extends AppCompatActivity {
                 public void onResponse(String response) {
                     Log.d("response", response);
                     String output = "";
+                    String adv = "";
                     try {
                         JSONObject jsonResponse = new JSONObject(response);
                         //Loop through list
@@ -105,6 +106,7 @@ public class weatherForecast extends AppCompatActivity {
                         JSONObject jsonObjectWeather = jsonArray.getJSONObject(0);
                         int id = jsonObjectWeather.getInt("id");
                         String description = jsonObjectWeather.getString("description");
+                        String mainDesc = jsonObjectWeather.getString("main");
                         JSONObject jsonObjectMain = jsonResponse.getJSONObject("main");
                         double temp_min = jsonObjectMain.getDouble("temp_min") - 273.15;
                         double temp_max = jsonObjectMain.getDouble("temp_max") - 273.15;
@@ -119,6 +121,27 @@ public class weatherForecast extends AppCompatActivity {
                         String countryName = jsonObjectSys.getString("country");
                         String countryCity = jsonResponse.getString("name");
 
+                        switch (mainDesc) {
+                            case "Thunderstorm":
+                                adv = "When thunder roars, go indoors!!!";
+                                break;
+                            case "Drizzle":
+                                adv = "Wear protective clothes and bring umbrella";
+                                break;
+                            case "Rain":
+                                adv = "Raincoat and/or umbrella, keep sock dry!";
+                                break;
+                            case "Snow":
+                                adv = "Wear appropriate outdoor clothing against cold!";
+                                break;
+                            case "Clear":
+                                adv = "Perfect sky for a travel day! Enjoy";
+                                break;
+                            case "Clouds":
+                                adv = "Cloudy for a travel day, enjoy!";
+                                break;
+                        }
+                        advice.setText(adv);
                         location.setText(countryCity + ", " +countryName);
                         temperature.setText(String.valueOf(ds.format(temp)) + " °C");
                         weather.setText(description);

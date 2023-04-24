@@ -63,7 +63,7 @@ public class NewsPages extends AppCompatActivity {
 
         private InputStream getInputStream(){
             try {
-                URL url = new URL("https://www.vietravel.com/vn/rss/non-nuoc-viet-nam.aspx");
+                URL url = new URL("https://thanhnien.vn/rss/du-lich.rss");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
                 connection.setDoInput(true);

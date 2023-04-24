@@ -7,7 +7,8 @@ import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class NewsWebsite extends AppCompatActivity {
+public class
+NewsWebsite extends AppCompatActivity {
 
     private WebView webView;
 
