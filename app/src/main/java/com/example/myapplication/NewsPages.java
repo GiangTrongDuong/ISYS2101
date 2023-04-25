@@ -63,7 +63,7 @@ public class NewsPages extends AppCompatActivity {
 
         private InputStream getInputStream(){
             try {
-                URL url = new URL("https://thanhnien.vn/rss/du-lich.rss");
+                URL url = new URL("https://vnexpress.net/rss/du-lich.rss");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
                 connection.setDoInput(true);
@@ -114,6 +114,7 @@ public class NewsPages extends AppCompatActivity {
                             } else if (tagName.equals("description")) {
                                 //get the content of description
                                 description = getContent(parser, "description");
+                                description = description.replaceAll("<[^>]*>", "");
                             } else if (tagName.equals("link")) {
                                 //get the content of link
                                 link = getContent(parser, "link");
