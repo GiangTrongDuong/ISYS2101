@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".weatherForecast">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="@string/citySelect">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Ho Chi Minh City, VN"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="26°C"
+            android:textSize="70sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Overcast Cloud"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/feelsLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Feel like 24°C"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/minTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Min: 24°C"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/maxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Max: 30°C"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/advice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Drizzle outside, bring yourself a raincoat!"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@drawable/box"
+            android:layout_margin="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="50dp"
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Wind speed"
+            android:textSize="20sp"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:background="@drawable/box"
+            android:layout_margin="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="50dp"
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Humidiy"
+            android:textSize="20sp"
+            android:textColor="@color/text" />
+        <TextView
+            android:background="@drawable/box"
+            android:layout_margin="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="50dp"
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cloudy"
+            android:textSize="20sp"
+            android:textColor="@color/text" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/gridlistLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seatLegendLayout"
+        android:background="@drawable/box"
+        android:layout_margin="10dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_gridtableLayout"
+                android:layout_width="3000dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:columnWidth="100dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="30"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbars="horizontal"
+                    android:stretchMode="none"
+                    android:verticalSpacing="1dp"
+                    android:paddingBottom="50dp">
+                </GridView>
+            </LinearLayout>
+        </FrameLayout>
+    </HorizontalScrollView>
+<!--    <RelativeLayout-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:weightSum="6"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:background="@drawable/box"-->
+<!--                android:paddingTop="20dp"-->
+<!--                android:paddingBottom="50dp"-->
+<!--                android:id="@+id/day1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="20°C"-->
+<!--                android:textSize="20sp" />-->
+
+<!--            <TextView-->
+<!--                android:background="@drawable/box"-->
+<!--                android:paddingTop="20dp"-->
+<!--                android:paddingBottom="50dp"-->
+<!--                android:id="@+id/day2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Humidiy"-->
+<!--                android:textSize="20sp" />-->
+<!--            <TextView-->
+<!--                android:background="@drawable/box"-->
+<!--                android:paddingTop="20dp"-->
+<!--                android:paddingBottom="50dp"-->
+<!--                android:id="@+id/day3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Cloudy"-->
+<!--                android:textSize="20sp" />-->
+<!--            <TextView-->
+<!--                android:background="@drawable/box"-->
+<!--                android:paddingTop="20dp"-->
+<!--                android:paddingBottom="50dp"-->
+<!--                android:id="@+id/day4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Cloudy"-->
+<!--                android:textSize="20sp" />-->
+<!--            <TextView-->
+<!--                android:background="@drawable/box"-->
+<!--                android:paddingTop="20dp"-->
+<!--                android:paddingBottom="50dp"-->
+<!--                android:id="@+id/day5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Cloudy"-->
+<!--                android:textSize="20sp" />-->
+<!--            <TextView-->
+<!--                android:background="@drawable/box"-->
+<!--                android:paddingTop="20dp"-->
+<!--                android:paddingBottom="50dp"-->
+<!--                android:id="@+id/day6"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Cloudy"-->
+<!--                android:textSize="20sp" />-->
+<!--        </LinearLayout>-->
+<!--        </HorizontalScrollView>-->
+<!--    </RelativeLayout>-->
+</LinearLayout>
