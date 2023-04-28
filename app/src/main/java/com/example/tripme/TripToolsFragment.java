@@ -1,5 +1,6 @@
 package com.example.tripme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +30,8 @@ public class TripToolsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 //Go to the page
+                Intent intent = new Intent(getActivity(), NewsPages.class);
+                startActivity(intent);
             }
         });
         buttonWeather = view.findViewById(R.id.box2);
@@ -36,6 +39,8 @@ public class TripToolsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 //Go to the page
+                Intent intent = new Intent(getActivity(), weatherForecast.class);
+                startActivity(intent);
             }
         });
         buttonMap = view.findViewById(R.id.box3);

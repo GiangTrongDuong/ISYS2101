@@ -32,8 +32,8 @@ public class weatherForecast extends AppCompatActivity {
 
     EditText cityName;
     TextView resultWeather;
-    private final String url = "http://api.openweathermap.org/data/2.5/forecast";
-    private final String urlSm = "http://api.openweathermap.org/data/2.5/weather";
+    private final String url = "https://api.openweathermap.org/data/2.5/forecast";
+    private final String urlSm = "https://api.openweathermap.org/data/2.5/weather";
     private final String apiKey = "eb1a770f8e3624d1aebc453838659acd";
     DecimalFormat df = new DecimalFormat("#.##");
     DecimalFormat ds = new DecimalFormat("#");

@@ -1,7 +1,7 @@
-#Sun Apr 23 22:02:43 ICT 2023
-base.1=C\:\\Users\\HP\\AndroidStudioProjects\\TripMe\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+#Fri Apr 28 09:50:37 ICT 2023
+base.1=C\:\\Users\\luong\\OneDrive\\Documents\\GitHub\\ISYS2101\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
-base.0=C\:\\Users\\HP\\AndroidStudioProjects\\TripMe\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.0=C\:\\Users\\luong\\OneDrive\\Documents\\GitHub\\ISYS2101\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex
