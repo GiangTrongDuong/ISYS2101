@@ -4,7 +4,7 @@
             "outputFile": "com.example.tripme.app-mergeDebugResources-45:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\AndroidStudioProjects\\TripMe\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "C:\\Users\\luong\\OneDrive\\Documents\\GitHub\\ISYS2101\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

@@ -14,6 +14,7 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <string name="app_name">TripME</string>
+    <string name="citySelect">Select City</string>
     <string name="default_web_client_id" translatable="false">604629071430-ojnbfml6t58v8eupppb2nfc83luufqhr.apps.googleusercontent.com</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="gcm_defaultSenderId" translatable="false">604629071430</string>
@@ -27,6 +28,7 @@
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">myapp-4d5c1</string>
     <string name="second_fragment_label">Second Fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_trip_creation">TripCreationActivity</string>
     <string name="title_checklist">Checklist</string>
     <string name="title_profile">Profile</string>

@@ -7,6 +7,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tripme.NewsPages;
+import com.example.tripme.weatherForecast;
+
 public class MainActivity extends AppCompatActivity {
 
 

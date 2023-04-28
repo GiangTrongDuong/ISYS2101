@@ -12,6 +12,16 @@
         android:theme="@style/Theme.TripMe"
         tools:targetApi="31">
         <activity
+            android:name=".weatherForecast"
+            android:exported="false"/>
+        <activity
+            android:name=".NewsPages"
+            android:exported="false"/>
+        <activity
+            android:name=".NewsWebsite"
+            android:exported="false"/>
+
+        <activity
             android:name=".TripJoiningActivity"
             android:exported="false" />
         <activity
@@ -35,6 +45,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
     </application>
 
 </manifest>

@@ -2545,6 +2545,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_logout_24
 drawable bottom_navbar_color
+drawable box
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2726,6 +2727,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id advice
 id alertTitle
 id aligned
 id all
@@ -2743,6 +2745,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id auto_complete_txt
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2763,6 +2766,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id button
 id buttonCreate
 id buttonJoin
 id buttonLogin
@@ -2853,6 +2857,7 @@ id editTextEmail
 id editTextName
 id editTextPassword
 id editTextPhone
+id editTextTextPersonName2
 id editTextTripInformation
 id editTextTripLocation
 id editTextTripName
@@ -2867,6 +2872,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id feelsLike
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2883,6 +2889,8 @@ id ghost_view_holder
 id gone
 id graph
 id graph_wrap
+id gridView
+id gridlistLayout
 id group_divider
 id grouping
 id groups
@@ -2919,9 +2927,11 @@ id light
 id line1
 id line3
 id linear
+id linearLayout_gridtableLayout
 id listMode
 id list_item
 id locale
+id location
 id ltr
 id masked
 id match_constraint
@@ -2945,9 +2955,11 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
+id maxTemp
 id media_actions
 id message
 id middle
+id minTemp
 id mini
 id month_grid
 id month_navigation_bar
@@ -3036,6 +3048,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerViewNew
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3067,6 +3080,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seatLegendLayout
 id select_dialog_listview
 id selected
 id selection_type
@@ -3125,6 +3139,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id temperature
 id terrain
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
@@ -3165,6 +3180,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtContent
+id txtDate
+id txtTemp
+id txtTime
+id txtTitle
 id unchecked
 id uniform
 id unlabeled
@@ -3180,6 +3200,8 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id weather
+id webView
 id west
 id wide
 id withText
@@ -3279,10 +3301,15 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout activity_news_pages
+layout activity_news_website
 layout activity_role_selection
 layout activity_signup
 layout activity_trip_creation
 layout activity_trip_joining
+layout activity_weather_forecast
+layout activity_weather_forecast_details
+layout activity_weather_list_viewer
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3305,6 +3332,8 @@ layout fragment_checklist
 layout fragment_checklist_list
 layout fragment_profile
 layout fragment_trip_tools
+layout grid_element
+layout list_city
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3351,6 +3380,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout news_item
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -3427,6 +3457,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
+string citySelect
 string clear_text_end_icon_content_description
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -3560,6 +3591,7 @@ string project_id
 string search_menu_title
 string second_fragment_label
 string status_bar_notification_info_overflow
+string title_activity_maps
 string title_activity_trip_creation
 string title_checklist
 string title_profile
@@ -4762,6 +4794,7 @@ styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
 xml image_share_filepaths
+xml network_security_config
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start
