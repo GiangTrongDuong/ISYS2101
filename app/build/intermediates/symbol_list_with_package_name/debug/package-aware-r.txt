@@ -2791,6 +2791,7 @@ id chains
 id checkbox
 id checked
 id checklist
+id checklistPhone
 id chip
 id chip1
 id chip2
@@ -3153,6 +3154,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView2
+id textViewCount
 id textViewTripCode
 id textViewTripName
 id text_input_end_icon
@@ -3330,6 +3332,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_checklist
 layout fragment_checklist_list
+layout fragment_checklist_phone
 layout fragment_profile
 layout fragment_trip_tools
 layout grid_element

@@ -80,7 +80,7 @@ public class TripJoiningActivity extends AppCompatActivity {
     public void updateUI() {
         if (valid){
             myRefUser.child(uid).child("tripID").setValue(tripID);
-            myRefTrip.child(tripID).child("participant").child(uid).setValue(new Participant(
+            myRefTrip.child(tripID).child("participant").child(getIntent().getExtras().getString("phone")).setValue(new Participant(
                     getIntent().getExtras().getString("name"),
                     "Absent",
                     getIntent().getExtras().getString("phone")));

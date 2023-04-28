@@ -4,7 +4,7 @@
             "outputFile": "com.example.tripme.app-mergeDebugResources-45:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\luong\\.gradle\\caches\\transforms-3\\62e52f6058d38fb667988d3bba01e81e\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\62e52f6058d38fb667988d3bba01e81e\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\luong\\.gradle\\caches\\transforms-3\\25be3f951f544342ab5a8b091d4ccf25\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\25be3f951f544342ab5a8b091d4ccf25\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

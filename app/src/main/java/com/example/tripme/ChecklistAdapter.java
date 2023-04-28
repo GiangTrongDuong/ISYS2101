@@ -47,13 +47,13 @@ public class ChecklistAdapter extends ArrayAdapter {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         v = inflater.inflate(R.layout.fragment_checklist, null);
         TextView participantName = (TextView) v.findViewById(R.id.name);
-        ImageButton participantRole = (ImageButton) v.findViewById(R.id.role);
+        ImageView participantRole = (ImageView) v.findViewById(R.id.role);
 
         participantName.setText(participantList.get(position).getParticipantName());
 //        itemNameView.setText(cartList.get(position).getitemName());
 //        itemStockView.setText("x  " + cartList.get(position).getitemStock());
 //        itemPriceView.setText("$" + cartList.get(position).getitemPrice());
-        if (participantList.get(position).getParticipantRole().equals("Arrived")) {
+        if (participantList.get(position).getParticipantRole().equals("Present")) {
             participantRole.setImageResource(R.drawable.check_circle);
         } else {
             participantRole.setImageResource(R.drawable.cross_circle);

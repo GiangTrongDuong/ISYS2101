@@ -53,6 +53,7 @@ id buttonSignup
 id button_cancel
 id call
 id checklist
+id checklistPhone
 id container
 id editTextEmail
 id editTextName
@@ -87,6 +88,7 @@ id root_otp_layout
 id seatLegendLayout
 id temperature
 id textView2
+id textViewCount
 id textViewTripCode
 id textViewTripName
 id txtContent
@@ -110,6 +112,7 @@ layout activity_weather_forecast_details
 layout activity_weather_list_viewer
 layout fragment_checklist
 layout fragment_checklist_list
+layout fragment_checklist_phone
 layout fragment_profile
 layout fragment_trip_tools
 layout grid_element

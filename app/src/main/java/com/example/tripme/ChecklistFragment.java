@@ -1,6 +1,7 @@
 package com.example.tripme;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,9 +10,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.tripme.databinding.FragmentChecklistBinding;
 import com.example.tripme.MainActivity;
@@ -31,9 +34,11 @@ public class ChecklistFragment extends Fragment {
     private FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
     private DatabaseReference myRef = database.getReference("Trips");
     ImageButton buttonLogout;
-    TextView textViewTripID;
-    ListView checklist;
+    TextView textViewTripID, textViewTripName, textViewCount;
+    ListView checklist, phonelist;
     ArrayList<Participant> participantList = new ArrayList<>();
+    int count = 0;
+    int presentCount = 0;
 
     public ChecklistFragment() {
     }
@@ -48,23 +53,64 @@ public class ChecklistFragment extends Fragment {
         String tripID = intent.getExtras().getString("tripID");
         textViewTripID = (TextView) view.findViewById(R.id.textViewTripCode);
         textViewTripID.setText(tripID);
+        textViewCount = (TextView) view.findViewById(R.id.textViewCount);
+        //Set trip name
+        textViewTripName = (TextView) view.findViewById(R.id.textViewTripName);
+        myRef.child(tripID).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                textViewTripName.setText(snapshot.getValue().toString());
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {}});
+
         // Set the adapter
         checklist = view.findViewById(R.id.checklist);
         ChecklistAdapter listAdapter = new ChecklistAdapter(inflater.getContext(), R.layout.fragment_checklist, participantList);
         checklist.setAdapter(listAdapter);
+        phonelist = view.findViewById(R.id.checklistPhone);
+        ChecklistPhoneAdapter listAdapter2 = new ChecklistPhoneAdapter(inflater.getContext(), R.layout.fragment_checklist_phone, participantList);
+        phonelist.setAdapter(listAdapter2);
         myRef.child(tripID).child("participant").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                count = 0;
+                presentCount = 0;
                 participantList.clear();
                 for (DataSnapshot dsp : snapshot.getChildren()){
+                    count ++;
                     participantList.add(new Participant(dsp.child("participantName").getValue().toString(),
-                            dsp.child("participantName").getValue().toString(),
-                            dsp.child("participantName").getValue().toString()));
+                            dsp.child("participantRole").getValue().toString(),
+                            dsp.child("participantPhone").getValue().toString()));
+                    if (dsp.child("participantRole").getValue().equals("Present")){
+                        presentCount ++;
+                    }
                     checklist.invalidateViews();
+                    phonelist.invalidateViews();
+                    textViewCount.setText("Present: " + presentCount + "/" + count);
                 }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
+        //Set item click listener
+        phonelist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + participantList.get(i).getParticipantPhone()));
+                startActivity(intent);
+            }
+        });
+        checklist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (participantList.get(i).getParticipantRole().equals("Absent")) {
+                    myRef.child(tripID).child("participant").child(participantList.get(i).getParticipantPhone()).child("participantRole").setValue("Present");
+                } else {
+                    myRef.child(tripID).child("participant").child(participantList.get(i).getParticipantPhone()).child("participantRole").setValue("Absent");
+                }
             }
         });
 
