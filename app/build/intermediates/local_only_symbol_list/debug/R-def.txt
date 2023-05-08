@@ -19,6 +19,7 @@ drawable bottom_navbar_color
 drawable box
 drawable check_circle
 drawable cross_circle
+drawable edit_icon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon
@@ -31,6 +32,7 @@ drawable news_icon
 drawable notification_icon
 drawable phone_icon
 drawable profile_icon
+drawable quit_icon
 drawable textbox
 drawable tools_icon
 drawable weather
@@ -97,6 +99,8 @@ id temperature
 id text
 id textView2
 id textViewCount
+id textViewName
+id textViewPhone
 id textViewTripCode
 id textViewTripName
 id time
@@ -105,7 +109,6 @@ id txtDate
 id txtTemp
 id txtTime
 id txtTitle
-id user_name
 id weather
 id webView
 layout activity_login

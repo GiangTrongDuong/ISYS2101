@@ -4,6 +4,7 @@ package com.example.tripme.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -24,13 +25,22 @@ public final class FragmentProfileBinding implements ViewBinding {
   public final ImageButton buttonLogout;
 
   @NonNull
-  public final TextView userName;
+  public final EditText editTextName;
+
+  @NonNull
+  public final TextView textViewName;
+
+  @NonNull
+  public final TextView textViewPhone;
 
   private FragmentProfileBinding(@NonNull LinearLayout rootView, @NonNull ImageButton buttonLogout,
-      @NonNull TextView userName) {
+      @NonNull EditText editTextName, @NonNull TextView textViewName,
+      @NonNull TextView textViewPhone) {
     this.rootView = rootView;
     this.buttonLogout = buttonLogout;
-    this.userName = userName;
+    this.editTextName = editTextName;
+    this.textViewName = textViewName;
+    this.textViewPhone = textViewPhone;
   }
 
   @Override
@@ -66,13 +76,26 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.user_name;
-      TextView userName = ViewBindings.findChildViewById(rootView, id);
-      if (userName == null) {
+      id = R.id.editTextName;
+      EditText editTextName = ViewBindings.findChildViewById(rootView, id);
+      if (editTextName == null) {
         break missingId;
       }
 
-      return new FragmentProfileBinding((LinearLayout) rootView, buttonLogout, userName);
+      id = R.id.textViewName;
+      TextView textViewName = ViewBindings.findChildViewById(rootView, id);
+      if (textViewName == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewPhone;
+      TextView textViewPhone = ViewBindings.findChildViewById(rootView, id);
+      if (textViewPhone == null) {
+        break missingId;
+      }
+
+      return new FragmentProfileBinding((LinearLayout) rootView, buttonLogout, editTextName,
+          textViewName, textViewPhone);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

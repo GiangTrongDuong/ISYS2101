@@ -1,90 +1,86 @@
 [
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_login.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_trip_joining.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_trip_joining.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_news_website.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_news_website.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_login.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\fragment_checklist_phone.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_checklist_phone.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_trip_creation.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_trip_creation.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\fragment_checklist_list.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_checklist_list.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_signup.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_trip_creation.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_trip_creation.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/news_item.xml",
+        "source": "com.example.tripme.app-main-49:/layout/news_item.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_role_selection.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_role_selection.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/grid_element.xml",
+        "source": "com.example.tripme.app-main-49:/layout/grid_element.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_weather_list_viewer.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_weather_list_viewer.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/fragment_notification_item.xml",
+        "source": "com.example.tripme.app-main-49:/layout/fragment_notification_item.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\fragment_notification_item.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_notification_item.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_news_pages.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_news_pages.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_trip_joining.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_trip_joining.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/fragment_profile.xml",
+        "source": "com.example.tripme.app-main-49:/layout/fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\fragment_trip_tools.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_trip_tools.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_weather_list_viewer.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_weather_list_viewer.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\list_city.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\list_city.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_weather_forecast.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_weather_forecast.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_news_pages.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_news_pages.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_weather_forecast_details.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_weather_forecast_details.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\fragment_checklist.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_checklist.xml"
-    },
-    {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_signup.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_signup.xml"
-    },
-    {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\fragment_notification.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_notification.xml"
-    },
-    {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_weather_forecast_details.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_weather_forecast_details.xml"
-    },
-    {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\fragment_profile.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/fragment_checklist_phone.xml",
+        "source": "com.example.tripme.app-main-49:/layout/fragment_checklist_phone.xml"
     },
     {
         "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/fragment_trip_tools.xml",
         "source": "com.example.tripme.app-main-49:/layout/fragment_trip_tools.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\grid_element.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\grid_element.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_main.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\news_item.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\news_item.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/list_city.xml",
+        "source": "com.example.tripme.app-main-49:/layout/list_city.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_weather_forecast.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_weather_forecast.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/fragment_checklist.xml",
+        "source": "com.example.tripme.app-main-49:/layout/fragment_checklist.xml"
     },
     {
-        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-mergeDebugResources-46:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-49:\\layout\\activity_main.xml"
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/fragment_checklist_list.xml",
+        "source": "com.example.tripme.app-main-49:/layout/fragment_checklist_list.xml"
+    },
+    {
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_news_website.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_news_website.xml"
+    },
+    {
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/fragment_notification.xml",
+        "source": "com.example.tripme.app-main-49:/layout/fragment_notification.xml"
+    },
+    {
+        "merged": "com.example.tripme.app-mergeDebugResources-46:/layout/activity_role_selection.xml",
+        "source": "com.example.tripme.app-main-49:/layout/activity_role_selection.xml"
     }
 ]

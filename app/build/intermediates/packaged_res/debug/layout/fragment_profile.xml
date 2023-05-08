@@ -9,35 +9,73 @@
     tools:context=".ProfileFragment"
     android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp">
-            <ImageButton
-                android:id="@+id/buttonLogout"
-                android:layout_width="55dp"
-                android:layout_height="56dp"
-                android:background="@null"
-                android:scaleType="fitCenter"
-                android:src="@drawable/baseline_logout_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+        <ImageButton
+            android:id="@+id/buttonLogout"
+            android:layout_width="55dp"
+            android:layout_height="56dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_logout_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
 
-            <TextView
-                android:id="@+id/user_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/cinderela"
-                android:text=" Name "
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:textSize="50sp" />
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cinderela"
+            android:text=" Name "
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/edit_icon"
+            android:translationZ="90dp" />
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Edit Name"
+            android:textAlignment="center"
+            android:textColor="@color/box_dark"
+            android:textColorHint="@color/box_dark"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:textAlignment="textStart"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textViewPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: 0987654321"
+            android:textColor="@color/box_dark"
+            android:textSize="30sp" />
+    </RelativeLayout>
 </LinearLayout>

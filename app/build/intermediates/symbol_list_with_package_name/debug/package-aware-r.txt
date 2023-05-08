@@ -2580,6 +2580,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
@@ -2644,6 +2645,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable phone_icon
 drawable profile_icon
+drawable quit_icon
 drawable test_custom_background
 drawable test_level_drawable
 drawable textbox
@@ -3162,6 +3164,8 @@ id textStart
 id textTop
 id textView2
 id textViewCount
+id textViewName
+id textViewPhone
 id textViewTripCode
 id textViewTripName
 id text_input_end_icon
@@ -3199,7 +3203,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id user_name
 id vertical_only
 id view_offset_helper
 id view_transition
