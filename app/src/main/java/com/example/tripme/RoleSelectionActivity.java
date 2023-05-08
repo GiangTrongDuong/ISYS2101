@@ -23,12 +23,14 @@ public class RoleSelectionActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
         DatabaseReference myRef = database.getReference("user");
         Intent i = new Intent(RoleSelectionActivity.this, TripCreationActivity.class);
+        Intent intent = new Intent(RoleSelectionActivity.this, TripJoiningActivity.class);
         buttonManager = findViewById(R.id.buttonManager);
         buttonParticipant = findViewById(R.id.buttonParticipant);
+        String phone = mAuth.getCurrentUser().getPhoneNumber();
         buttonManager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myRef.child(mAuth.getCurrentUser().getPhoneNumber()).child("role").setValue("Manager");
+                myRef.child(phone).child("role").setValue("Manager");
                 i.putExtra("phone", mAuth.getCurrentUser().getPhoneNumber());
                 startActivity(i);
             }
@@ -36,9 +38,10 @@ public class RoleSelectionActivity extends AppCompatActivity {
         buttonParticipant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myRef.child(mAuth.getCurrentUser().getPhoneNumber()).child("role").setValue("Participant");
-                i.putExtra("phone", getIntent().getExtras().getString("phone"));
-                startActivity(i);
+                myRef.child(phone).child("role").setValue("Participant");
+                intent.putExtra("phone", phone);
+                intent.putExtra("name", getIntent().getExtras().getString("name"));
+                startActivity(intent);
             }
         });
     }

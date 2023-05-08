@@ -2,6 +2,7 @@ package com.example.tripme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -57,5 +58,8 @@ public class TripCreationActivity extends AppCompatActivity {
         myRef.child(id).child("location").setValue(location);
         myRef.child(id).child("information").setValue(information);
         myRef.child(id).child("managerPhone").setValue(mAuth.getCurrentUser().getPhoneNumber());
+        Intent intentManagerMain = new Intent(this, MainActivity.class);
+        intentManagerMain.putExtra("tripID", id);
+        startActivity(intentManagerMain);
     }
 }

@@ -240,7 +240,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent intentManager = new Intent(this, TripCreationActivity.class);
         Intent intentManagerMain = new Intent(this, MainActivity.class);
         Intent intentParticipant =new Intent(this, TripJoiningActivity.class);
-        myRef.child(currentUser.getPhoneNumber()).addValueEventListener(new ValueEventListener() {
+        myRef.child(currentUser.getPhoneNumber()).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 user = new User(snapshot.child("name").getValue().toString(),
@@ -250,6 +250,7 @@ public class LoginActivity extends AppCompatActivity {
                         snapshot.child("phone").getValue().toString());
                 if (user.getRole().equals("")){
                     intentRoleSelection.putExtra("phone", user.getPhone());
+                    intentRoleSelection.putExtra("name", user.getName());
                     startActivity(intentRoleSelection);
                 } else {
 //                    Toast.makeText(LoginActivity.this, user.getRole(),

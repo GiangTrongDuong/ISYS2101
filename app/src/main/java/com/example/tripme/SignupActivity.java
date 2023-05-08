@@ -86,14 +86,16 @@ public class SignupActivity extends AppCompatActivity {
                     //add phone number to the 'taken_phones' table
                     myRef2
                             .child(phone).setValue("true");
-                    mUserReferenceListener = myRef.addValueEventListener(new ValueEventListener() {
+                    myRef.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             //new data may be inserted by other users
                             //we must check if OUR data has been inserted and can be searched
                             if(snapshot.hasChild(phone)){
                                 pd.dismiss();
-                                startActivity(new Intent(SignupActivity.this, RoleSelectionActivity.class));
+                                Intent i = new Intent(SignupActivity.this, RoleSelectionActivity.class);
+                                i.putExtra("name", name.getText().toString());
+                                startActivity(i);
                             }
                         }
                         @Override

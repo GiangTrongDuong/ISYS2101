@@ -18,6 +18,7 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HP\.gradle\caches
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\HP\.gradle\caches\transforms-3\ac62a7d29f196a7e41b6bd0fb762bdfd\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\HP\.gradle\caches\transforms-3\2174578859f21746fb418aae777ca97e\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\HP\.gradle\caches\transforms-3\6df8dafa6b5c5d406d723be86da970c5\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\HP\.gradle\caches\transforms-3\cd1370dea3062edc0b72ce3ef71c657b\transformed\multidex-1.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\f31b4bcd86ef2ace45fd1e9793d35774\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\HP\.gradle\caches\transforms-3\9bc52b05d2ca5dd5ebc59e42434f871a\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-common:20.3.2] C:\Users\HP\.gradle\caches\transforms-3\76c244c1b162e9d14b602107e0c9b4ac\transformed\firebase-common-20.3.2\AndroidManifest.xml:15:1-39:12
@@ -274,6 +275,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\HP\.gradle\cache
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\HP\.gradle\caches\transforms-3\2174578859f21746fb418aae777ca97e\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\HP\.gradle\caches\transforms-3\6df8dafa6b5c5d406d723be86da970c5\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\HP\.gradle\caches\transforms-3\6df8dafa6b5c5d406d723be86da970c5\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\HP\.gradle\caches\transforms-3\cd1370dea3062edc0b72ce3ef71c657b\transformed\multidex-1.0.3\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.3] C:\Users\HP\.gradle\caches\transforms-3\cd1370dea3062edc0b72ce3ef71c657b\transformed\multidex-1.0.3\AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\f31b4bcd86ef2ace45fd1e9793d35774\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\HP\.gradle\caches\transforms-3\f31b4bcd86ef2ace45fd1e9793d35774\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\HP\.gradle\caches\transforms-3\9bc52b05d2ca5dd5ebc59e42434f871a\transformed\firebase-appcheck-interop-16.1.0\AndroidManifest.xml:18:5-20:41
