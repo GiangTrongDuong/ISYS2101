@@ -35,16 +35,25 @@ public final class ActivitySignupBinding implements ViewBinding {
   public final EditText editTextName;
 
   @NonNull
+  public final EditText editTextPassword;
+
+  @NonNull
+  public final EditText editTextPhone;
+
+  @NonNull
   public final TextView textView2;
 
   private ActivitySignupBinding(@NonNull LinearLayout rootView, @NonNull ImageButton buttonCancel,
       @NonNull Button buttonSignup, @NonNull EditText editTextEmail, @NonNull EditText editTextName,
+      @NonNull EditText editTextPassword, @NonNull EditText editTextPhone,
       @NonNull TextView textView2) {
     this.rootView = rootView;
     this.buttonCancel = buttonCancel;
     this.buttonSignup = buttonSignup;
     this.editTextEmail = editTextEmail;
     this.editTextName = editTextName;
+    this.editTextPassword = editTextPassword;
+    this.editTextPhone = editTextPhone;
     this.textView2 = textView2;
   }
 
@@ -99,6 +108,18 @@ public final class ActivitySignupBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.editTextPassword;
+      EditText editTextPassword = ViewBindings.findChildViewById(rootView, id);
+      if (editTextPassword == null) {
+        break missingId;
+      }
+
+      id = R.id.editTextPhone;
+      EditText editTextPhone = ViewBindings.findChildViewById(rootView, id);
+      if (editTextPhone == null) {
+        break missingId;
+      }
+
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
@@ -106,7 +127,7 @@ public final class ActivitySignupBinding implements ViewBinding {
       }
 
       return new ActivitySignupBinding((LinearLayout) rootView, buttonCancel, buttonSignup,
-          editTextEmail, editTextName, textView2);
+          editTextEmail, editTextName, editTextPassword, editTextPhone, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
