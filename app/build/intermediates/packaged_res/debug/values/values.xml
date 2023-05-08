@@ -31,6 +31,7 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_trip_creation">TripCreationActivity</string>
     <string name="title_checklist">Checklist</string>
+    <string name="title_notification">Notification</string>
     <string name="title_profile">Profile</string>
     <string name="tools">Tools</string>
     <style name="Theme.TripMe" parent="Theme.MaterialComponents.DayNight.NoActionBar">

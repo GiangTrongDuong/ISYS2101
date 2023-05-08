@@ -59,7 +59,7 @@ public class ChecklistFragment extends Fragment {
         myRef.child(tripID).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                textViewTripName.setText(snapshot.getValue().toString());
+                textViewTripName.setText(" " + snapshot.getValue().toString() + ":");
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {}});

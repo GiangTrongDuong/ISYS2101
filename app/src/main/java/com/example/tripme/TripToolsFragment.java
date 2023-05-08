@@ -52,14 +52,14 @@ public class TripToolsFragment extends Fragment {
         });
 
 
-//        buttonLogout = view.findViewById(R.id.buttonLogout);
-//        buttonLogout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                FirebaseAuth.getInstance().signOut();
-//                getActivity().finish();
-//            }
-//        });
+        buttonLogout = view.findViewById(R.id.buttonLogout);
+        buttonLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                getActivity().finish();
+            }
+        });
         return view;
     }
 }

@@ -25,7 +25,9 @@ drawable icon
 drawable layout_bot
 drawable layout_top
 drawable map
+drawable map_icon
 drawable news
+drawable news_icon
 drawable notification_icon
 drawable phone_icon
 drawable profile_icon
@@ -33,6 +35,7 @@ drawable textbox
 drawable tools_icon
 drawable weather
 drawable weather_button
+drawable weather_icon
 font african
 font cinderela
 font jurrasic
@@ -42,6 +45,7 @@ id box1
 id box2
 id box3
 id box4
+id btn
 id button
 id buttonCreate
 id buttonJoin
@@ -55,6 +59,7 @@ id call
 id checklist
 id checklistPhone
 id container
+id editText
 id editTextEmail
 id editTextName
 id editTextPassword
@@ -75,8 +80,10 @@ id nav_bar
 id nav_host_fragment_activity_main
 id nav_view
 id navigation_checklist
+id navigation_notification
 id navigation_profile
 id navigation_triptool
+id notificationList
 id otp_edit_box1
 id otp_edit_box2
 id otp_edit_box3
@@ -87,10 +94,12 @@ id role
 id root_otp_layout
 id seatLegendLayout
 id temperature
+id text
 id textView2
 id textViewCount
 id textViewTripCode
 id textViewTripName
+id time
 id txtContent
 id txtDate
 id txtTemp
@@ -113,6 +122,8 @@ layout activity_weather_list_viewer
 layout fragment_checklist
 layout fragment_checklist_list
 layout fragment_checklist_phone
+layout fragment_notification
+layout fragment_notification_item
 layout fragment_profile
 layout fragment_trip_tools
 layout grid_element
@@ -140,6 +151,7 @@ string second_fragment_label
 string title_activity_maps
 string title_activity_trip_creation
 string title_checklist
+string title_notification
 string title_profile
 string tools
 style Theme.TripMe

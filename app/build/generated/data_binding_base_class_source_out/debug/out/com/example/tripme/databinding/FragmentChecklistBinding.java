@@ -4,7 +4,7 @@ package com.example.tripme.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,18 +21,14 @@ public final class FragmentChecklistBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton call;
-
-  @NonNull
   public final TextView name;
 
   @NonNull
-  public final ImageButton role;
+  public final ImageView role;
 
-  private FragmentChecklistBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton call,
-      @NonNull TextView name, @NonNull ImageButton role) {
+  private FragmentChecklistBinding(@NonNull ConstraintLayout rootView, @NonNull TextView name,
+      @NonNull ImageView role) {
     this.rootView = rootView;
-    this.call = call;
     this.name = name;
     this.role = role;
   }
@@ -64,12 +60,6 @@ public final class FragmentChecklistBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.call;
-      ImageButton call = ViewBindings.findChildViewById(rootView, id);
-      if (call == null) {
-        break missingId;
-      }
-
       id = R.id.name;
       TextView name = ViewBindings.findChildViewById(rootView, id);
       if (name == null) {
@@ -77,12 +67,12 @@ public final class FragmentChecklistBinding implements ViewBinding {
       }
 
       id = R.id.role;
-      ImageButton role = ViewBindings.findChildViewById(rootView, id);
+      ImageView role = ViewBindings.findChildViewById(rootView, id);
       if (role == null) {
         break missingId;
       }
 
-      return new FragmentChecklistBinding((ConstraintLayout) rootView, call, name, role);
+      return new FragmentChecklistBinding((ConstraintLayout) rootView, name, role);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
