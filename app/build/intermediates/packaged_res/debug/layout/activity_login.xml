@@ -22,45 +22,31 @@
             android:textColor="@color/text"
             android:textSize="70sp"/>
     </RelativeLayout>
+
     <RelativeLayout
+        android:id="@+id/liInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
         android:background="@drawable/layout_top">
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editTextPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:background="@drawable/textbox"
             android:ems="10"
-            android:hint="Email"
+            android:hint="+84 ..."
             android:inputType="textEmailAddress"
             android:textSize="20sp" />
     </RelativeLayout>
+
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:background="@color/box_dark">
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textSize="20sp"
-            android:background="@drawable/textbox"/>
-    </RelativeLayout>
-    <RelativeLayout
+        android:id="@+id/liInput2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
@@ -69,27 +55,55 @@
         android:background="@drawable/layout_bot">
 
         <Button
+            android:layout_centerHorizontal="true"
             android:id="@+id/buttonLogin"
-            android:layout_width="115dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
+            android:layout_width="172dp"
+            android:layout_height="63dp"
             android:layout_marginTop="40dp"
-            android:text="Login"
+            android:text="Continue"
             android:textColor="@color/background"
             android:textSize="20sp"
             android:textStyle="bold"
             app:backgroundTint="#00FFFFFF" />
 
-        <Button
-            android:id="@+id/buttonSignup"
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/liLinearOTP">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="175dp"
-            android:layout_marginTop="40dp"
-            android:text="Signup"
-            android:textColor="@color/text"
+            android:text="Enter your code:"
+            android:textSize="20sp"
+            android:id="@+id/liAskOTP"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/liOTP"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"/>
+        <Button
+            android:id="@+id/liSubmitOTP"
+            android:layout_width="172dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="10dp"
+            android:text="Submit OTP"
+            android:textColor="@color/background"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:backgroundTint="#00FFFFFF" />
-    </RelativeLayout>
+            app:backgroundTint="@color/box_dark" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No code received? Click to resend"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/liResendOTP"
+            />
+    </LinearLayout>
 </LinearLayout>

@@ -26,7 +26,7 @@ public class TripCreationActivity extends AppCompatActivity {
         Random random = new Random();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
-        DatabaseReference myRef = database.getReference("Users");
+        DatabaseReference myRef = database.getReference("user");
 
         editTextTripName = findViewById(R.id.editTextTripName);
         editTextTripLocation = findViewById(R.id.editTextTripLocation);
@@ -44,7 +44,7 @@ public class TripCreationActivity extends AppCompatActivity {
                     Toast.makeText(TripCreationActivity.this, "Invalid information.",
                             Toast.LENGTH_SHORT).show();
                 } else {
-                    myRef.child(mAuth.getCurrentUser().getUid()).child("tripID").setValue(tripID);
+                    myRef.child(mAuth.getCurrentUser().getPhoneNumber()).child("tripID").setValue(tripID);
                     createTrip(tripID, tripName, tripLocation, tripInformation);
                 }
             }
@@ -53,7 +53,7 @@ public class TripCreationActivity extends AppCompatActivity {
 
     public void createTrip(String id, String name, String location, String information){
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
-        DatabaseReference myRef = database.getReference("Trips");
+        DatabaseReference myRef = database.getReference("trip");
         myRef.child(id).child("name").setValue(name);
         myRef.child(id).child("location").setValue(location);
         myRef.child(id).child("information").setValue(information);

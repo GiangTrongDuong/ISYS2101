@@ -1,18 +1,43 @@
 {
   "project_info": {
     "project_number": "604629071430",
+    "firebase_url": "https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "myapp-4d5c1",
     "storage_bucket": "myapp-4d5c1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:604629071430:android:3ddd1dfa3a8e7e2c607c47",
+        "mobilesdk_app_id": "1:604629071430:android:95ad2e4ff955323a607c47",
         "android_client_info": {
           "package_name": "com.example.tripme"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "604629071430-dmqq2o4d1vba6s9l368jv8d89ahrmnrd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tripme",
+            "certificate_hash": "6f35660f22ba60d3ba8a8500b81c50ebf3e25b91"
+          }
+        },
+        {
+          "client_id": "604629071430-o14gsk96q6034sqgtrjpbiqb985gk2da.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tripme",
+            "certificate_hash": "8a9f204658af0427bab05b5362d33b5c679f1021"
+          }
+        },
+        {
+          "client_id": "604629071430-u4ok81tmd2tuunu43m8ll5u8dptdiuq9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tripme",
+            "certificate_hash": "1c1b5b7d09cf37975ebb91b3f50be58f4587f53d"
+          }
+        },
         {
           "client_id": "604629071430-ojnbfml6t58v8eupppb2nfc83luufqhr.apps.googleusercontent.com",
           "client_type": 3

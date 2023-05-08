@@ -32,7 +32,7 @@ import java.util.ArrayList;
 public class ChecklistFragment extends Fragment {
     private FragmentChecklistBinding binding;
     private FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
-    private DatabaseReference myRef = database.getReference("Trips");
+    private DatabaseReference myRef = database.getReference("trip");
     ImageButton buttonLogout;
     TextView textViewTripID, textViewTripName, textViewCount;
     ListView checklist, phonelist;
@@ -59,7 +59,7 @@ public class ChecklistFragment extends Fragment {
         myRef.child(tripID).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                textViewTripName.setText(snapshot.getValue().toString());
+                textViewTripName.setText(" " + snapshot.getValue().toString() + ":");
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {}});

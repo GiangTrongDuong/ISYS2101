@@ -14,4 +14,5 @@
     <string name="tools">Tools</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="citySelect">Select City</string>
+    <string name="title_notification">Notification</string>
 </resources>

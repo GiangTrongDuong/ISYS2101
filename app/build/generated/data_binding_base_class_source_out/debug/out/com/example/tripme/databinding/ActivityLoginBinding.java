@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,25 +26,46 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Button buttonLogin;
 
   @NonNull
-  public final Button buttonSignup;
+  public final EditText editTextPhone;
 
   @NonNull
-  public final EditText editTextEmail;
+  public final TextView liAskOTP;
 
   @NonNull
-  public final EditText editTextPassword;
+  public final RelativeLayout liInput;
+
+  @NonNull
+  public final RelativeLayout liInput2;
+
+  @NonNull
+  public final LinearLayout liLinearOTP;
+
+  @NonNull
+  public final EditText liOTP;
+
+  @NonNull
+  public final TextView liResendOTP;
+
+  @NonNull
+  public final Button liSubmitOTP;
 
   @NonNull
   public final TextView textView2;
 
   private ActivityLoginBinding(@NonNull LinearLayout rootView, @NonNull Button buttonLogin,
-      @NonNull Button buttonSignup, @NonNull EditText editTextEmail,
-      @NonNull EditText editTextPassword, @NonNull TextView textView2) {
+      @NonNull EditText editTextPhone, @NonNull TextView liAskOTP, @NonNull RelativeLayout liInput,
+      @NonNull RelativeLayout liInput2, @NonNull LinearLayout liLinearOTP, @NonNull EditText liOTP,
+      @NonNull TextView liResendOTP, @NonNull Button liSubmitOTP, @NonNull TextView textView2) {
     this.rootView = rootView;
     this.buttonLogin = buttonLogin;
-    this.buttonSignup = buttonSignup;
-    this.editTextEmail = editTextEmail;
-    this.editTextPassword = editTextPassword;
+    this.editTextPhone = editTextPhone;
+    this.liAskOTP = liAskOTP;
+    this.liInput = liInput;
+    this.liInput2 = liInput2;
+    this.liLinearOTP = liLinearOTP;
+    this.liOTP = liOTP;
+    this.liResendOTP = liResendOTP;
+    this.liSubmitOTP = liSubmitOTP;
     this.textView2 = textView2;
   }
 
@@ -80,21 +102,51 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.buttonSignup;
-      Button buttonSignup = ViewBindings.findChildViewById(rootView, id);
-      if (buttonSignup == null) {
+      id = R.id.editTextPhone;
+      EditText editTextPhone = ViewBindings.findChildViewById(rootView, id);
+      if (editTextPhone == null) {
         break missingId;
       }
 
-      id = R.id.editTextEmail;
-      EditText editTextEmail = ViewBindings.findChildViewById(rootView, id);
-      if (editTextEmail == null) {
+      id = R.id.liAskOTP;
+      TextView liAskOTP = ViewBindings.findChildViewById(rootView, id);
+      if (liAskOTP == null) {
         break missingId;
       }
 
-      id = R.id.editTextPassword;
-      EditText editTextPassword = ViewBindings.findChildViewById(rootView, id);
-      if (editTextPassword == null) {
+      id = R.id.liInput;
+      RelativeLayout liInput = ViewBindings.findChildViewById(rootView, id);
+      if (liInput == null) {
+        break missingId;
+      }
+
+      id = R.id.liInput2;
+      RelativeLayout liInput2 = ViewBindings.findChildViewById(rootView, id);
+      if (liInput2 == null) {
+        break missingId;
+      }
+
+      id = R.id.liLinearOTP;
+      LinearLayout liLinearOTP = ViewBindings.findChildViewById(rootView, id);
+      if (liLinearOTP == null) {
+        break missingId;
+      }
+
+      id = R.id.liOTP;
+      EditText liOTP = ViewBindings.findChildViewById(rootView, id);
+      if (liOTP == null) {
+        break missingId;
+      }
+
+      id = R.id.liResendOTP;
+      TextView liResendOTP = ViewBindings.findChildViewById(rootView, id);
+      if (liResendOTP == null) {
+        break missingId;
+      }
+
+      id = R.id.liSubmitOTP;
+      Button liSubmitOTP = ViewBindings.findChildViewById(rootView, id);
+      if (liSubmitOTP == null) {
         break missingId;
       }
 
@@ -104,8 +156,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((LinearLayout) rootView, buttonLogin, buttonSignup,
-          editTextEmail, editTextPassword, textView2);
+      return new ActivityLoginBinding((LinearLayout) rootView, buttonLogin, editTextPhone, liAskOTP,
+          liInput, liInput2, liLinearOTP, liOTP, liResendOTP, liSubmitOTP, textView2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

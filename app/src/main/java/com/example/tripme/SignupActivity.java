@@ -3,12 +3,14 @@ package com.example.tripme;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -16,17 +18,27 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
 
 public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    private DatabaseReference myRef;
-    private User user;
-    String email = "";
-    String password = "";
-    String phone = "";
-    String name = "";
+    FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    private DatabaseReference myRef = database.getReference("user");
+    private DatabaseReference myRef2 = database.getReference("taken_phones");
+
+    private EditText name;
+    private EditText email;
+    private Button createAccount;
+    ImageButton buttonCancel;
+    FirebaseAuth auth;
+    private ProgressDialog pd;
+    private ValueEventListener mUserReferenceListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,19 +46,16 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         mAuth = FirebaseAuth.getInstance();
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
-        myRef = database.getReference("Users");
-
-        EditText editTextEmail = findViewById(R.id.editTextEmail);
-        EditText editTextPassword = findViewById(R.id.editTextPassword);
-        EditText editTextPhone = findViewById(R.id.editTextPhone);
-        EditText editTextName = findViewById(R.id.editTextName);
-        Button buttonSignup = findViewById(R.id.buttonSignup);
-        ImageButton buttonCancel = findViewById(R.id.button_cancel);
-
-        Intent intent = getIntent();
-        editTextEmail.setText(intent.getExtras().getString("email"));
-        editTextPassword.setText(intent.getExtras().getString("password"));
+        name = findViewById(R.id.editTextName);
+        email = findViewById(R.id.editTextEmail);
+        createAccount = findViewById(R.id.buttonSignup);
+        buttonCancel = findViewById(R.id.button_cancel);
+        String phone = getIntent().getStringExtra("phone");
+        auth = FirebaseAuth.getInstance();
+        //init progress dialog so that it runs whenever we need
+        pd = new ProgressDialog(this);
+        pd.setTitle("Please wait...");
+        pd.setCanceledOnTouchOutside(false);
 
         buttonCancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,46 +64,50 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        Intent intentMain = new Intent();
-        buttonSignup.setOnClickListener(new View.OnClickListener() {
+        createAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                email = editTextEmail.getText().toString();
-                password = editTextPassword.getText().toString();
-                phone = editTextPhone.getText().toString();
-                name = editTextName.getText().toString();
-                if(email.equals("") || password.equals("") || phone.equals("") || name.equals("")) {
-                    Toast.makeText(SignupActivity.this, "Invalid information.",
-                            Toast.LENGTH_SHORT).show();
-                } else {
-                    user = new User(name, email, "", "", phone);
-                    signUp(email, password);
+                pd.setMessage("Creating account...");
+                pd.show();
+                if(name.getText().toString().isEmpty() || email.getText().toString().isEmpty()){
+                    Toast.makeText(SignupActivity.this, "No information may be blank!"
+                            , Toast.LENGTH_SHORT).show();
+                }
+                else{ //all info is here, get it to the db and go to profile
+                    HashMap<String, Object> newUser = new HashMap<>();
+                    newUser.put("name", name.getText().toString());
+                    newUser.put("email", email.getText().toString());
+                    newUser.put("phone", phone);
+                    newUser.put("role", "");
+                    newUser.put("tripID", "");
+                    //add user info to the 'user' table
+                    myRef
+                            .child(phone).updateChildren(newUser);
+                    //add phone number to the 'taken_phones' table
+                    myRef2
+                            .child(phone).setValue("true");
+                    mUserReferenceListener = myRef.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            //new data may be inserted by other users
+                            //we must check if OUR data has been inserted and can be searched
+                            if(snapshot.hasChild(phone)){
+                                pd.dismiss();
+                                startActivity(new Intent(SignupActivity.this, RoleSelectionActivity.class));
+                            }
+                        }
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+                        }
+                    });
                 }
             }
         });
     }
-    private void signUp(String email, String password) {
-        mAuth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(SignupActivity.this, "Account created.",
-                                    Toast.LENGTH_SHORT).show();
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            updateUI(user);
-                        } else {
-                            Toast.makeText(SignupActivity.this, "Failed.",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-    }
-
-    public void updateUI(FirebaseUser currentUser) {
-        String uid = mAuth.getCurrentUser().getUid();
-        myRef.child(uid).setValue(user); //adding user info to database
-        Intent intent = new Intent(this, RoleSelectionActivity.class);
-        startActivity(intent);
+    @Override
+    protected void onDestroy(){
+        pd.dismiss();
+        super.onDestroy();
+        myRef.removeEventListener(mUserReferenceListener);
     }
 }

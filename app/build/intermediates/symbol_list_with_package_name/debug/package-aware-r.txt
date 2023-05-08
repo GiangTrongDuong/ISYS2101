@@ -2580,6 +2580,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
@@ -2605,6 +2606,7 @@ drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
 drawable map
+drawable map_icon
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2627,6 +2629,7 @@ drawable mtrl_popupmenu_background_overlay
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable news
+drawable news_icon
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -2642,6 +2645,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable phone_icon
 drawable profile_icon
+drawable quit_icon
 drawable test_custom_background
 drawable test_level_drawable
 drawable textbox
@@ -2650,6 +2654,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable weather
 drawable weather_button
+drawable weather_icon
 font african
 font cinderela
 font jurrasic
@@ -2766,6 +2771,10 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn
+id btnEmail
+id btnName
+id btnPhone
 id button
 id buttonCreate
 id buttonJoin
@@ -2854,9 +2863,9 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editText
 id editTextEmail
 id editTextName
-id editTextPassword
 id editTextPhone
 id editTextTextPersonName2
 id editTextTripInformation
@@ -2924,6 +2933,13 @@ id layout
 id left
 id leftToRight
 id legacy
+id liAskOTP
+id liInput
+id liInput2
+id liLinearOTP
+id liOTP
+id liResendOTP
+id liSubmitOTP
 id light
 id line1
 id line3
@@ -3007,6 +3023,7 @@ id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_checklist
 id navigation_header_container
+id navigation_notification
 id navigation_profile
 id navigation_triptool
 id never
@@ -3017,6 +3034,7 @@ id noState
 id none
 id normal
 id north
+id notificationList
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3155,7 +3173,12 @@ id textStart
 id textTop
 id textView2
 id textViewCount
+id textViewEmail
+id textViewName
+id textViewPhone
+id textViewRole
 id textViewTripCode
+id textViewTripID
 id textViewTripName
 id text_input_end_icon
 id text_input_error_icon
@@ -3192,7 +3215,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id user_name
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3333,6 +3355,8 @@ layout design_text_input_start_icon
 layout fragment_checklist
 layout fragment_checklist_list
 layout fragment_checklist_phone
+layout fragment_notification
+layout fragment_notification_item
 layout fragment_profile
 layout fragment_trip_tools
 layout grid_element
@@ -3489,6 +3513,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string firebase_database_url
 string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
@@ -3597,6 +3622,7 @@ string status_bar_notification_info_overflow
 string title_activity_maps
 string title_activity_trip_creation
 string title_checklist
+string title_notification
 string title_profile
 string tools
 style AlertDialog_AppCompat

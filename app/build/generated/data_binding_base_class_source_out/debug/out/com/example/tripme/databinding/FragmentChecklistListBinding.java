@@ -28,6 +28,12 @@ public final class FragmentChecklistListBinding implements ViewBinding {
   public final ListView checklist;
 
   @NonNull
+  public final ListView checklistPhone;
+
+  @NonNull
+  public final TextView textViewCount;
+
+  @NonNull
   public final TextView textViewTripCode;
 
   @NonNull
@@ -35,10 +41,13 @@ public final class FragmentChecklistListBinding implements ViewBinding {
 
   private FragmentChecklistListBinding(@NonNull LinearLayout rootView,
       @NonNull ImageButton buttonLogout, @NonNull ListView checklist,
+      @NonNull ListView checklistPhone, @NonNull TextView textViewCount,
       @NonNull TextView textViewTripCode, @NonNull TextView textViewTripName) {
     this.rootView = rootView;
     this.buttonLogout = buttonLogout;
     this.checklist = checklist;
+    this.checklistPhone = checklistPhone;
+    this.textViewCount = textViewCount;
     this.textViewTripCode = textViewTripCode;
     this.textViewTripName = textViewTripName;
   }
@@ -82,6 +91,18 @@ public final class FragmentChecklistListBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.checklistPhone;
+      ListView checklistPhone = ViewBindings.findChildViewById(rootView, id);
+      if (checklistPhone == null) {
+        break missingId;
+      }
+
+      id = R.id.textViewCount;
+      TextView textViewCount = ViewBindings.findChildViewById(rootView, id);
+      if (textViewCount == null) {
+        break missingId;
+      }
+
       id = R.id.textViewTripCode;
       TextView textViewTripCode = ViewBindings.findChildViewById(rootView, id);
       if (textViewTripCode == null) {
@@ -95,7 +116,7 @@ public final class FragmentChecklistListBinding implements ViewBinding {
       }
 
       return new FragmentChecklistListBinding((LinearLayout) rootView, buttonLogout, checklist,
-          textViewTripCode, textViewTripName);
+          checklistPhone, textViewCount, textViewTripCode, textViewTripName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

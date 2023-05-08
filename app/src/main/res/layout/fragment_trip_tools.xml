@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/background"
-    tools:context=".ProfileFragment"
+    tools:context=".TripToolsFragment"
     android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,6 +15,17 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:fontFamily="@font/cinderela"
+                android:text=" Trip Tools "
+                android:textColor="@color/text"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
             <ImageButton
                 android:id="@+id/buttonLogout"
                 android:layout_width="55dp"
@@ -25,76 +36,99 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:layout_marginTop="30dp"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
 
+        <ImageView
+            android:layout_width="119dp"
+            android:layout_height="86dp"
+            android:src="@drawable/news_icon"
+            android:translationZ="90dp"/>
         <Button
             android:id="@+id/box1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/news"
-            android:gravity="center"
-            android:paddingTop="20dp"
-            android:paddingBottom="50dp"
+            android:layout_width="280dp"
+            android:layout_height="86dp"
+            android:background="@drawable/weather_button"
             android:text="News"
-            android:textSize="20sp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/box_light"
+            android:textSize="30sp"
             app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/box2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/weather"
-            android:gravity="center"
-            android:paddingTop="20dp"
-            android:paddingBottom="50dp"
-            android:text="Weather"
-            android:textSize="20sp"
-            app:backgroundTint="@null" />
-    </LinearLayout>
-    <LinearLayout
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp">
 
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="119dp"
+            android:layout_height="86dp"
+            android:src="@drawable/weather_icon"
+            android:translationZ="90dp"/>
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/box2"
+            android:layout_width="280dp"
+            android:layout_height="86dp"
+            android:background="@drawable/weather_button"
+            android:text="Weather"
+            android:textAlignment="textStart"
+            android:textColor="@color/box_light"
+            android:textSize="25sp"
+            app:backgroundTint="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="119dp"
+            android:layout_height="86dp"
+            android:src="@drawable/map_icon"
+            android:translationZ="90dp"/>
         <Button
             android:id="@+id/box3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/map"
-            android:gravity="center"
-            android:paddingTop="20dp"
-            android:paddingBottom="50dp"
-            android:text="Maps"
-            android:textSize="20sp"
+            android:layout_width="280dp"
+            android:layout_height="86dp"
+            android:background="@drawable/weather_button"
+            android:text="Map"
+            android:textAlignment="textEnd"
+            android:textColor="@color/box_light"
+            android:textSize="30sp"
             app:backgroundTint="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="119dp"
+            android:layout_height="86dp"
+            android:src="@drawable/quit_icon"
+            android:translationZ="90dp"/>
 
         <Button
             android:id="@+id/box4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:background="@drawable/icon"
-            android:gravity="center"
-            android:paddingTop="20dp"
-            android:paddingBottom="50dp"
-            android:text="Other"
-            android:textSize="20sp"
+            android:layout_width="280dp"
+            android:layout_height="86dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/weather_button"
+            android:text="End trip"
+            android:textAlignment="textStart"
+            android:textColor="@color/box_light"
+            android:textSize="25sp"
             app:backgroundTint="@null" />
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

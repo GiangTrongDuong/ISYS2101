@@ -19,8 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 public class TripJoiningActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
-    DatabaseReference myRefTrip = database.getReference("Trips");
-    DatabaseReference myRefUser = database.getReference("Users");
+    DatabaseReference myRefTrip = database.getReference("trip");
+    DatabaseReference myRefUser = database.getReference("user");
     EditText otp_textbox_one, otp_textbox_two, otp_textbox_three, otp_textbox_four;
     Button buttonJoin;
     String tripID, uid;
@@ -52,14 +52,14 @@ public class TripJoiningActivity extends AppCompatActivity {
                     otp_textbox_two.getText().toString() +
                     otp_textbox_three.getText().toString() +
                     otp_textbox_four.getText().toString();
-                uid = mAuth.getCurrentUser().getUid();
+                uid = mAuth.getCurrentUser().getPhoneNumber();
                 validateTrip(tripID);
 
             }
         });
     }
     public void validateTrip(String tripID){
-        DatabaseReference ref = database.getReference("Trips");
+        DatabaseReference ref = database.getReference("trip");
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
