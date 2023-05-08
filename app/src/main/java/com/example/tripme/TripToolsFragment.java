@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
@@ -14,7 +15,8 @@ import com.example.tripme.databinding.FragmentTripToolsBinding;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class TripToolsFragment extends Fragment {
-    Button buttonLogout, buttonNews, buttonWeather, buttonMap;
+    Button  buttonNews, buttonWeather, buttonMap;
+    ImageButton buttonLogout;
     private FragmentTripToolsBinding binding;
     public TripToolsFragment() {
     }

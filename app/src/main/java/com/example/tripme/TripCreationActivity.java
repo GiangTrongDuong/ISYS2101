@@ -17,12 +17,11 @@ public class TripCreationActivity extends AppCompatActivity {
     EditText editTextTripName, editTextTripLocation, editTextTripInformation;
     Button buttonCreate;
     String tripID = "", tripName = "", tripLocation = "", tripInformation = "";
-    private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trip_creation);
-        mAuth = FirebaseAuth.getInstance();
         Random random = new Random();
 
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
@@ -57,6 +56,6 @@ public class TripCreationActivity extends AppCompatActivity {
         myRef.child(id).child("name").setValue(name);
         myRef.child(id).child("location").setValue(location);
         myRef.child(id).child("information").setValue(information);
-        myRef.child(id).child("managerPhone").setValue(getIntent().getExtras().getString("phone"));
+        myRef.child(id).child("managerPhone").setValue(mAuth.getCurrentUser().getPhoneNumber());
     }
 }
