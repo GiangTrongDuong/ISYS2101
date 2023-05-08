@@ -31,7 +31,7 @@ import java.util.Date;
 public class NotificationFragment extends Fragment {
     private FragmentNotificationBinding binding;
     private FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
-    private DatabaseReference myRef = database.getReference("Trips");
+    private DatabaseReference myRef = database.getReference("trip");
     ListView listView;
     EditText editText;
     Button btn;

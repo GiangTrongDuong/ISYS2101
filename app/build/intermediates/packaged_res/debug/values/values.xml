@@ -16,10 +16,11 @@
     <string name="app_name">TripME</string>
     <string name="citySelect">Select City</string>
     <string name="default_web_client_id" translatable="false">604629071430-ojnbfml6t58v8eupppb2nfc83luufqhr.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="gcm_defaultSenderId" translatable="false">604629071430</string>
     <string name="google_api_key" translatable="false">AIzaSyDXrUUC2OJg2cJyH7kqK6ONMT90F_G-4og</string>
-    <string name="google_app_id" translatable="false">1:604629071430:android:3ddd1dfa3a8e7e2c607c47</string>
+    <string name="google_app_id" translatable="false">1:604629071430:android:95ad2e4ff955323a607c47</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDXrUUC2OJg2cJyH7kqK6ONMT90F_G-4og</string>
     <string name="google_storage_bucket" translatable="false">myapp-4d5c1.appspot.com</string>
     <string name="hello_first_fragment">Hello first fragment</string>

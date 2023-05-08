@@ -19,6 +19,7 @@ drawable bottom_navbar_color
 drawable box
 drawable check_circle
 drawable cross_circle
+drawable edit_icon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon
@@ -31,6 +32,7 @@ drawable news_icon
 drawable notification_icon
 drawable phone_icon
 drawable profile_icon
+drawable quit_icon
 drawable textbox
 drawable tools_icon
 drawable weather
@@ -46,6 +48,9 @@ id box2
 id box3
 id box4
 id btn
+id btnEmail
+id btnName
+id btnPhone
 id button
 id buttonCreate
 id buttonJoin
@@ -62,7 +67,6 @@ id container
 id editText
 id editTextEmail
 id editTextName
-id editTextPassword
 id editTextPhone
 id editTextTextPersonName2
 id editTextTripInformation
@@ -71,6 +75,13 @@ id editTextTripName
 id feelsLike
 id gridView
 id gridlistLayout
+id liAskOTP
+id liInput
+id liInput2
+id liLinearOTP
+id liOTP
+id liResendOTP
+id liSubmitOTP
 id linearLayout_gridtableLayout
 id location
 id maxTemp
@@ -97,7 +108,12 @@ id temperature
 id text
 id textView2
 id textViewCount
+id textViewEmail
+id textViewName
+id textViewPhone
+id textViewRole
 id textViewTripCode
+id textViewTripID
 id textViewTripName
 id time
 id txtContent
@@ -105,7 +121,6 @@ id txtDate
 id txtTemp
 id txtTime
 id txtTitle
-id user_name
 id weather
 id webView
 layout activity_login
@@ -136,6 +151,7 @@ navigation nav_bar
 string app_name
 string citySelect
 string default_web_client_id
+string firebase_database_url
 string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key

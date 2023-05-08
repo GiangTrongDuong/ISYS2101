@@ -21,22 +21,22 @@ public class RoleSelectionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_role_selection);
         mAuth = FirebaseAuth.getInstance();
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
-        DatabaseReference myRef = database.getReference("Users");
+        DatabaseReference myRef = database.getReference("user");
         Intent i = new Intent(RoleSelectionActivity.this, TripCreationActivity.class);
         buttonManager = findViewById(R.id.buttonManager);
         buttonParticipant = findViewById(R.id.buttonParticipant);
         buttonManager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myRef.child(mAuth.getCurrentUser().getUid()).child("role").setValue("Manager");
-                i.putExtra("phone", getIntent().getExtras().getString("phone"));
+                myRef.child(mAuth.getCurrentUser().getPhoneNumber()).child("role").setValue("Manager");
+                i.putExtra("phone", mAuth.getCurrentUser().getPhoneNumber());
                 startActivity(i);
             }
         });
         buttonParticipant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myRef.child(mAuth.getCurrentUser().getUid()).child("role").setValue("Participant");
+                myRef.child(mAuth.getCurrentUser().getPhoneNumber()).child("role").setValue("Participant");
                 i.putExtra("phone", getIntent().getExtras().getString("phone"));
                 startActivity(i);
             }

@@ -2580,6 +2580,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit_icon
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
@@ -2644,6 +2645,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable phone_icon
 drawable profile_icon
+drawable quit_icon
 drawable test_custom_background
 drawable test_level_drawable
 drawable textbox
@@ -2770,6 +2772,9 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn
+id btnEmail
+id btnName
+id btnPhone
 id button
 id buttonCreate
 id buttonJoin
@@ -2861,7 +2866,6 @@ id east
 id editText
 id editTextEmail
 id editTextName
-id editTextPassword
 id editTextPhone
 id editTextTextPersonName2
 id editTextTripInformation
@@ -2929,6 +2933,13 @@ id layout
 id left
 id leftToRight
 id legacy
+id liAskOTP
+id liInput
+id liInput2
+id liLinearOTP
+id liOTP
+id liResendOTP
+id liSubmitOTP
 id light
 id line1
 id line3
@@ -3162,7 +3173,12 @@ id textStart
 id textTop
 id textView2
 id textViewCount
+id textViewEmail
+id textViewName
+id textViewPhone
+id textViewRole
 id textViewTripCode
+id textViewTripID
 id textViewTripName
 id text_input_end_icon
 id text_input_error_icon
@@ -3199,7 +3215,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id user_name
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3498,6 +3513,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string firebase_database_url
 string first_fragment_label
 string gcm_defaultSenderId
 string google_api_key
