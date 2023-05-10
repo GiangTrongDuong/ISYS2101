@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginSignupActivity">
+<!--    for phone log in-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/liInput">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+84 ..."
+            android:id="@+id/liPhone"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Log in or Sign up"
+            android:id="@+id/liLogin"
+            />
+    </LinearLayout>
+<!--    for phone otp-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/liLinearOTP">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your code:"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/liAskOTP"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/liOTP"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Submit OTP"
+            android:id="@+id/liSubmitOTP"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No code received? Click to resend"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/liResendOTP"
+            />
+    </LinearLayout>
+</RelativeLayout>

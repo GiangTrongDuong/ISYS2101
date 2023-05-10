@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "687073435163",
+    "firebase_url": "https://test-trip-51076-default-rtdb.firebaseio.com",
+    "project_id": "test-trip-51076",
+    "storage_bucket": "test-trip-51076.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687073435163:android:f4cf3ee576af0715b7a2be",
+        "android_client_info": {
+          "package_name": "com.example.nvafb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687073435163-5ecv5ehgr91diqksreo1jjvies0p8v3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nvafb",
+            "certificate_hash": "8a9f204658af0427bab05b5362d33b5c679f1021"
+          }
+        },
+        {
+          "client_id": "687073435163-a9a7bs6j4n6ia57bv4bf2tkglco0mffo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGFFJD-4mOsn-p_niZpUR0-y9t9JCrUww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687073435163-a9a7bs6j4n6ia57bv4bf2tkglco0mffo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687073435163:android:e3db02bcb7e864b9b7a2be",
+        "android_client_info": {
+          "package_name": "com.example.nvaphone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687073435163-1crkcjejlje79rv3d9plbfb4d4esbum6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nvaphone",
+            "certificate_hash": "1c1b5b7d09cf37975ebb91b3f50be58f4587f53d"
+          }
+        },
+        {
+          "client_id": "687073435163-gc9u6n56f0g64rkteq9e2tdfcbu1oteg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nvaphone",
+            "certificate_hash": "8a9f204658af0427bab05b5362d33b5c679f1021"
+          }
+        },
+        {
+          "client_id": "687073435163-a9a7bs6j4n6ia57bv4bf2tkglco0mffo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGFFJD-4mOsn-p_niZpUR0-y9t9JCrUww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687073435163-a9a7bs6j4n6ia57bv4bf2tkglco0mffo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
