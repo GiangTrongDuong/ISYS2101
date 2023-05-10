@@ -2,4 +2,6 @@
     <string name="app_name">My Application</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="citySelect">Select City</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
+    <string name="map_api_key">AIzaSyAtNGbfrfSWHEkrqbtinsHnjkbhfdLWpy8</string>
 </resources>

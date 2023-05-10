@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button viewNews = findViewById(R.id.btnNews);
         Button viewWeather = findViewById(R.id.btnWeather);
         Button viewMap = findViewById(R.id.buttonMap);
+        Button viewMap2 = findViewById(R.id.buttonMap2);
 
         viewNews.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,10 +32,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {openWeather();}
         });
 
-//        viewMap.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View view) {openMap();}
-//        });
+        viewMap.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {openMap();}
+        });
+
+        viewMap2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {openMap2();}
+        });
     }
 
     public void openNews(){
@@ -47,8 +53,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentOpenWeather);
     }
 
-//    public void openMap(){
-//        Intent intentOpenMap = new Intent(this, MapsActivity.class);
-//        startActivity(intentOpenMap);
-//    }
+    public void openMap(){
+        Intent intentOpenMap = new Intent(this, MapsActivity.class);
+        startActivity(intentOpenMap);
+    }
+
+    public void openMap2(){
+        Intent intentOpenMap = new Intent(this, MapsActivity2.class);
+        startActivity(intentOpenMap);
+    }
 }
