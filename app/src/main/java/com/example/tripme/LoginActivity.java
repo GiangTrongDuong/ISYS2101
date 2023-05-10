@@ -230,7 +230,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onFailure(@NonNull Exception e) {
                         //failed to log in
                         pd.dismiss();
-                        Toast.makeText(LoginActivity.this, ""+e.getMessage(), Toast.LENGTH_LONG).show();
+                        //Toast.makeText(LoginActivity.this, ""+e.getMessage(), Toast.LENGTH_LONG).show();
                         System.out.println(""+e.getMessage());
                     }
                 });
@@ -239,7 +239,8 @@ public class LoginActivity extends AppCompatActivity {
         Intent intentRoleSelection = new Intent(this, RoleSelectionActivity.class);
         Intent intentManager = new Intent(this, TripCreationActivity.class);
         Intent intentManagerMain = new Intent(this, MainActivity.class);
-        Intent intentParticipant =new Intent(this, TripJoiningActivity.class);
+        Intent intentParticipantNotInTrip = new Intent(this, TripJoiningActivity.class);
+        Intent intentParticipantInTrip = new Intent(this, MainActivity.class);
         myRef.child(currentUser.getPhoneNumber()).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -264,9 +265,16 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(intentManagerMain);
                         }
                     } else { //Not manager and not empty = participant
-                        intentParticipant.putExtra("phone", user.getPhone());
-                        intentParticipant.putExtra("name", user.getName());
-                        startActivity(intentParticipant);
+                        if (user.getTripID() != ""){ //not in any trip -> selection
+                            intentParticipantNotInTrip.putExtra("phone", user.getPhone());
+                            intentParticipantNotInTrip.putExtra("name", user.getName());
+                            startActivity(intentParticipantNotInTrip);
+                        }
+                        else{
+                            intentParticipantInTrip.putExtra("phone", user.getPhone());
+                            intentParticipantInTrip.putExtra("name", user.getName());
+                            startActivity(intentParticipantInTrip);
+                        }
                     }
                 }
             }

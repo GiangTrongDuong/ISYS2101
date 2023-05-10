@@ -23,7 +23,7 @@ public class TripJoiningActivity extends AppCompatActivity {
     DatabaseReference myRefUser = database.getReference("user");
     EditText otp_textbox_one, otp_textbox_two, otp_textbox_three, otp_textbox_four;
     Button buttonJoin;
-    String tripID, uid;
+    String tripID, uid, user_name;
     Boolean valid = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,8 @@ public class TripJoiningActivity extends AppCompatActivity {
         otp_textbox_three = findViewById(R.id.otp_edit_box3);
         otp_textbox_four = findViewById(R.id.otp_edit_box4);
         buttonJoin = findViewById(R.id.buttonJoin);
+        uid = getIntent().getExtras().getString("phone");
+        user_name = getIntent().getExtras().getString("name");
 
         EditText[] edit = {otp_textbox_one, otp_textbox_two, otp_textbox_three, otp_textbox_four};
 
@@ -52,7 +54,7 @@ public class TripJoiningActivity extends AppCompatActivity {
                     otp_textbox_two.getText().toString() +
                     otp_textbox_three.getText().toString() +
                     otp_textbox_four.getText().toString();
-                uid = mAuth.getCurrentUser().getPhoneNumber();
+                //uid = mAuth.getCurrentUser().getPhoneNumber();
                 validateTrip(tripID);
 
             }
@@ -80,10 +82,10 @@ public class TripJoiningActivity extends AppCompatActivity {
     public void updateUI() {
         if (valid){
             myRefUser.child(uid).child("tripID").setValue(tripID);
-            myRefTrip.child(tripID).child("participant").child(getIntent().getExtras().getString("phone")).setValue(new Participant(
-                    getIntent().getExtras().getString("name"),
+            myRefTrip.child(tripID).child("participant").child(uid).setValue(new Participant(
+                    user_name,
                     "Absent",
-                    getIntent().getExtras().getString("phone")));
+                    uid));
             //TODO: Go to participant main page
         } else {
             Toast.makeText(TripJoiningActivity.this, "Invalid Code.",

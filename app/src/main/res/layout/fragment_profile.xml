@@ -1,177 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background"
-    tools:context=".ProfileFragment"
-    android:orientation="vertical">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp">
-        <ImageButton
-            android:id="@+id/buttonLogout"
-            android:layout_width="55dp"
-            android:layout_height="56dp"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/baseline_logout_24"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:background="@color/background"
+        tools:context=".ProfileFragment"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textViewName"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/cinderela"
-            android:text=" Name "
-            android:textAlignment="center"
-            android:textColor="@color/text"
-            android:textSize="50sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/btnName"
-            android:layout_width="47dp"
-            android:layout_height="45dp"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/edit_icon"
-            android:translationZ="90dp" />
-        <EditText
-            android:id="@+id/editTextName"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:hint="Edit Name"
-            android:textAlignment="center"
-            android:textColor="@color/box_dark"
-            android:textColorHint="@color/box_dark"
-            android:textSize="20sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:textAlignment="center"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/textViewPhone"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+            <ImageButton
+                android:id="@+id/buttonLogout"
+                android:layout_width="55dp"
+                android:layout_height="56dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_logout_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phone: 0987654321"
-            android:textColor="@color/box_dark"
-            android:textSize="30sp" />
-    </RelativeLayout>
+            android:layout_marginTop="20dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cinderela"
+                android:text=" Name "
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="50sp" />
+        </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/btnPhone"
-            android:layout_width="47dp"
-            android:layout_height="45dp"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/edit_icon"
-            android:translationZ="90dp"
-            app:backgroundTint="#00000000" />
-        <EditText
-            android:id="@+id/editTextPhone"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:hint="Edit Phone"
-            android:textAlignment="center"
-            android:textColor="@color/box_dark"
-            android:textColorHint="@color/box_dark"
-            android:textSize="20sp" />
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/btnName"
+                android:layout_width="47dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/edit_icon"
+                android:translationZ="90dp" />
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Edit Name"
+                android:textAlignment="center"
+                android:textColor="@color/box_dark"
+                android:textColorHint="@color/box_dark"
+                android:textSize="20sp" />
+        </RelativeLayout>
 
-        <TextView
-            android:textAlignment="center"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/textViewEmail"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email: test@gmail.com"
-            android:textColor="@color/box_dark"
-            android:textSize="30sp" />
-    </RelativeLayout>
+            android:layout_marginTop="20dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textViewPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone: 0987654321"
+                android:textColor="@color/box_dark"
+                android:textSize="30sp" />
+        </RelativeLayout>
 
-        <ImageView
-            android:id="@+id/btnEmail"
-            android:layout_width="47dp"
-            android:layout_height="45dp"
-            android:layout_alignParentRight="true"
-            android:src="@drawable/edit_icon"
-            android:translationZ="90dp"
-            app:backgroundTint="#00000000" />
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:hint="Edit Email"
-            android:textAlignment="center"
-            android:textColor="@color/box_dark"
-            android:textColorHint="@color/box_dark"
-            android:textSize="20sp" />
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/btnPhone"
+                android:layout_width="47dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/edit_icon"
+                android:translationZ="90dp"
+                app:backgroundTint="#00000000" />
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Edit Phone"
+                android:textAlignment="center"
+                android:textColor="@color/box_dark"
+                android:textColorHint="@color/box_dark"
+                android:textSize="20sp" />
+        </RelativeLayout>
 
-        <TextView
-            android:textAlignment="center"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/textViewRole"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Role: Manager"
-            android:textColor="@color/box_dark"
-            android:textSize="30sp" />
-    </RelativeLayout>
+            android:layout_marginTop="20dp">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:textAlignment="center"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/textViewTripID"
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: test@gmail.com"
+                android:textColor="@color/box_dark"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnEmail"
+                android:layout_width="47dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/edit_icon"
+                android:translationZ="90dp"
+                app:backgroundTint="#00000000" />
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Edit Email"
+                android:textAlignment="center"
+                android:textColor="@color/box_dark"
+                android:textColorHint="@color/box_dark"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TripID: 0000"
-            android:textColor="@color/box_dark"
-            android:textSize="30sp" />
-    </RelativeLayout>
-</LinearLayout>
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textViewRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Role: Manager"
+                android:textColor="@color/box_dark"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/textViewTripID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TripID: 0000"
+                android:textColor="@color/box_dark"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
