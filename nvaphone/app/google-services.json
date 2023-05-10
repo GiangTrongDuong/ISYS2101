@@ -52,6 +52,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "687073435163-1crkcjejlje79rv3d9plbfb4d4esbum6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nvaphone",
+            "certificate_hash": "1c1b5b7d09cf37975ebb91b3f50be58f4587f53d"
+          }
+        },
+        {
           "client_id": "687073435163-gc9u6n56f0g64rkteq9e2tdfcbu1oteg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

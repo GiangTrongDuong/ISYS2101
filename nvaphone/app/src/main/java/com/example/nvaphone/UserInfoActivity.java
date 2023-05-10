@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.HashMap;
 
@@ -58,9 +59,13 @@ public class UserInfoActivity extends AppCompatActivity {
                             , Toast.LENGTH_SHORT).show();
                 }
                 else{ //all info is here, get it to the db and go to profile
+                    String tokenId = FirebaseMessaging.getInstance().getToken().toString();
+
                     HashMap<String, Object> newUser = new HashMap<>();
                     newUser.put("name", name.getText().toString());
                     newUser.put("email", email.getText().toString());
+                    newUser.put("phone", phone);
+                    newUser.put("token", tokenId);
                     //add user info to the 'user' table
                     FirebaseDatabase.getInstance().getReference().child("user")
                             .child(phone).updateChildren(newUser);

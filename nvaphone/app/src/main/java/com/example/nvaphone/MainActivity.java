@@ -10,7 +10,12 @@ import android.widget.Button;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.messaging.FirebaseMessaging;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         signup = findViewById(R.id.mainSignup);
 
-        //createTestDB();
+        createTestDB();
+        FirebaseMessaging.getInstance().getToken();
 
         FirebaseUser user = auth.getCurrentUser();
         if (user != null) {// User is signed in
@@ -35,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
             // No user logged in yet -> to the Login/Sign up activity! Same thing anyway
             startActivity(new Intent(MainActivity.this, LoginSignupActivity.class));
         }
+
+
+
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,11 +55,29 @@ public class MainActivity extends AppCompatActivity {
     public void createTestDB(){
         String phonerino = "+8472718212";
         //test user
-        HashMap<String, Object> userino =new HashMap<>();
-        userino.put("name", "viet anh");
-        userino.put("email", "sfsdf@gmail.com");
-        FirebaseDatabase.getInstance().getReference().child("user").child(phonerino).updateChildren(userino);
-        //test taken_phones
-        FirebaseDatabase.getInstance().getReference().child("taken_phones").child(phonerino).setValue("true");
+//        HashMap<String, Object> userino = new HashMap<>();
+//        userino.put("name", "viet anh");
+//        userino.put("email", "sfsdf@gmail.com");
+//        FirebaseDatabase.getInstance().getReference().child("user").child(phonerino).updateChildren(userino);
+//        //test taken_phones
+//        FirebaseDatabase.getInstance().getReference().child("taken_phones").child(phonerino).setValue("true");
+        //test notification
+        Date currentTime = Calendar.getInstance().getTime();
+        DateFormat format = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
+
+        HashMap<String, Object> noti = new HashMap<>();
+        noti.put("content", "testing stuff");
+        noti.put("time", format.format(currentTime));
+        FirebaseDatabase.getInstance().getReference().child("trip").child("xxx").
+                child("notification").child("aa").updateChildren(noti);
+        FirebaseDatabase.getInstance().getReference().child("trip").child("yyy").
+                child("notification").child("aa").updateChildren(noti);
+
+        //emulate a trip
+        FirebaseDatabase.getInstance().getReference().child("trip").child("xxx").
+                child("participant").setValue("+8456787654567");
+        FirebaseDatabase.getInstance().getReference().child("trip").child("yyy").
+                child("participant").setValue("+9090ssss11111");
     }
+
 }
