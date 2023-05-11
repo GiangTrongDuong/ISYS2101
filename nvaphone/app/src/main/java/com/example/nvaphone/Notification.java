@@ -41,6 +41,6 @@ public class Notification {
     }
     @NonNull
     public String toString(){
-        return time + "\n" + content;
+        return "[" + time + "]" + "   " + content;
     }
 }

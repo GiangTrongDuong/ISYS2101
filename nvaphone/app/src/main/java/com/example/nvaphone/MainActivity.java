@@ -29,12 +29,15 @@ public class MainActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         signup = findViewById(R.id.mainSignup);
 
-        createTestDB();
+        //createTestDB();
         FirebaseMessaging.getInstance().getToken();
+        SingletonAppTime appTime = new SingletonAppTime();
 
         FirebaseUser user = auth.getCurrentUser();
         if (user != null) {// User is signed in
-            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+            Intent i = new Intent(MainActivity.this, ProfileActivity.class);
+            i.putExtra("from", "main_login");
+            startActivity(i);
 //            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
         } else {
@@ -75,9 +78,9 @@ public class MainActivity extends AppCompatActivity {
 
         //emulate a trip
         FirebaseDatabase.getInstance().getReference().child("trip").child("xxx").
-                child("participant").setValue("+8456787654567");
+                child("participant").child("+8456787654567").setValue("true");
         FirebaseDatabase.getInstance().getReference().child("trip").child("yyy").
-                child("participant").setValue("+9090ssss11111");
+                child("participant").child("+9090ssss11111").setValue("true");
     }
 
 }

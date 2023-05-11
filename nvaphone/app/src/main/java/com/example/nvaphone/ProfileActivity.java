@@ -32,6 +32,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class ProfileActivity extends AppCompatActivity {
     //show the logged-in phone number and an option to log out
     private TextView name;
@@ -40,6 +45,9 @@ public class ProfileActivity extends AppCompatActivity {
     private TextView hello2;
     private Button logoutbtn;
     private Button notibtn;
+//    private int previousNotiID = -1;
+    private Date appDate;
+    private Date notiDate;
     private DatabaseReference mParticipant = FirebaseDatabase.getInstance().getReference().child("trip").
             child("xxx");
     FirebaseAuth auth;
@@ -58,6 +66,16 @@ public class ProfileActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         checkUserStatus(); //set phone details to the textview, if applicable
+        //get the app time
+        String appTime = SingletonAppTime.getInstance().getAppTime();
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
+        try{
+            appDate = sdf.parse(appTime);
+        }
+        catch (Exception e){
+            System.out.println("" + e);
+        }
+
         logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -80,8 +98,21 @@ public class ProfileActivity extends AppCompatActivity {
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 try {
                     Notification n = snapshot.getValue(Notification.class);
-                    String body = n.toString();
-                    sendNotification(body);
+                    int currentKey = Integer.valueOf(snapshot.getKey());
+                    try {
+                        notiDate = sdf.parse(n.getTime());
+                    }
+                    catch (Exception e){
+                        System.out.println("" + e);
+                    }
+                    System.out.println("\n===========appdate = " + appDate + ", notidate = " + notiDate);
+                    System.out.println("\n===========Current: " + currentKey + ", previous child: " + previousChildName);
+                    //only show notification if it is created before app launch time
+                    if(appDate.compareTo(notiDate) < 0){
+                        String body = n.toString();
+                        sendNotification(body, currentKey);
+
+                    }
                 } catch (Exception e) {
                     System.out.println("================1" + e);
                 }
@@ -89,13 +120,11 @@ public class ProfileActivity extends AppCompatActivity {
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                try {
-                    Notification n = snapshot.getValue(Notification.class);
-                    String body = n.toString();
-                    sendNotification(body);
-                } catch (Exception e) {
-                    System.out.println("================2" + e);
-                }
+//                Notification n = snapshot.getValue(Notification.class);
+//                if(!snapshot.getKey().equals("xxx")){
+//                    String body = n.toString();
+//                    sendNotification(body, new Integer(snapshot.getKey()));
+//                    }
             }
 
             @Override
@@ -150,15 +179,16 @@ public class ProfileActivity extends AppCompatActivity {
         }
     }
 
-    private void sendNotification(String messageBody) {
-//        Intent intent = new Intent(this, MainActivity.class);
-//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);
+    private void sendNotification(String messageBody, int notificationID) {
+        Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, notificationID, intent, PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_ONE_SHOT);
+//        PendingIntent dismissIntent = NotificationActivity.getDismissIntent
 
         String channelId = getString(R.string.project_id);
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
         NotificationCompat.Builder notificationBuilder =
                 new NotificationCompat.Builder(this, channelId)
                         .setSmallIcon(R.drawable.ic_launcher_background)
@@ -167,18 +197,19 @@ public class ProfileActivity extends AppCompatActivity {
                         .setContentText(messageBody)
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)
-//                        .setContentIntent(pendingIntent)
+                        .setContentIntent(pendingIntent)
+                        .setOnlyAlertOnce(true)
                         .setPriority(NotificationManager.IMPORTANCE_HIGH);
 //                        .addAction(new NotificationCompat.Action(
 //                                android.R.drawable.sym_call_missed,
-//                                "Cancel",
-////                                PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT)))
+//                                "Dismiss",
+//                                PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT)))
 //                        .addAction(new NotificationCompat.Action(
 //                                android.R.drawable.sym_call_outgoing,
 //                                "OK",
 //                                PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT)));
 
-        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+
 //        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         // Since android Oreo notification channel is needed.
