@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class ActivityTripCreationBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final Button buttonCreate;
@@ -32,7 +32,7 @@ public final class ActivityTripCreationBinding implements ViewBinding {
   @NonNull
   public final EditText editTextTripName;
 
-  private ActivityTripCreationBinding(@NonNull LinearLayout rootView, @NonNull Button buttonCreate,
+  private ActivityTripCreationBinding(@NonNull ScrollView rootView, @NonNull Button buttonCreate,
       @NonNull EditText editTextTripInformation, @NonNull EditText editTextTripLocation,
       @NonNull EditText editTextTripName) {
     this.rootView = rootView;
@@ -44,7 +44,7 @@ public final class ActivityTripCreationBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -93,7 +93,7 @@ public final class ActivityTripCreationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityTripCreationBinding((LinearLayout) rootView, buttonCreate,
+      return new ActivityTripCreationBinding((ScrollView) rootView, buttonCreate,
           editTextTripInformation, editTextTripLocation, editTextTripName);
     }
     String missingId = rootView.getResources().getResourceName(id);

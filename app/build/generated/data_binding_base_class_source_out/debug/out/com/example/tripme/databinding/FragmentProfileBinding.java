@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +20,7 @@ import java.lang.String;
 
 public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final ImageView btnEmail;
@@ -58,7 +58,7 @@ public final class FragmentProfileBinding implements ViewBinding {
   @NonNull
   public final TextView textViewTripID;
 
-  private FragmentProfileBinding(@NonNull LinearLayout rootView, @NonNull ImageView btnEmail,
+  private FragmentProfileBinding(@NonNull ScrollView rootView, @NonNull ImageView btnEmail,
       @NonNull ImageView btnName, @NonNull ImageView btnPhone, @NonNull ImageButton buttonLogout,
       @NonNull EditText editTextEmail, @NonNull EditText editTextName,
       @NonNull EditText editTextPhone, @NonNull TextView textViewEmail,
@@ -81,7 +81,7 @@ public final class FragmentProfileBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -178,7 +178,7 @@ public final class FragmentProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentProfileBinding((LinearLayout) rootView, btnEmail, btnName, btnPhone,
+      return new FragmentProfileBinding((ScrollView) rootView, btnEmail, btnName, btnPhone,
           buttonLogout, editTextEmail, editTextName, editTextPhone, textViewEmail, textViewName,
           textViewPhone, textViewRole, textViewTripID);
     }

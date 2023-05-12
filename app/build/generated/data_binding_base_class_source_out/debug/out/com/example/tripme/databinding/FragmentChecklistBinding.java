@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.tripme.R;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class FragmentChecklistBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
   public final TextView name;
@@ -26,7 +26,7 @@ public final class FragmentChecklistBinding implements ViewBinding {
   @NonNull
   public final ImageView role;
 
-  private FragmentChecklistBinding(@NonNull ConstraintLayout rootView, @NonNull TextView name,
+  private FragmentChecklistBinding(@NonNull ScrollView rootView, @NonNull TextView name,
       @NonNull ImageView role) {
     this.rootView = rootView;
     this.name = name;
@@ -35,7 +35,7 @@ public final class FragmentChecklistBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -72,7 +72,7 @@ public final class FragmentChecklistBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentChecklistBinding((ConstraintLayout) rootView, name, role);
+      return new FragmentChecklistBinding((ScrollView) rootView, name, role);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

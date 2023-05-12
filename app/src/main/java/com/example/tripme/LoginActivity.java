@@ -254,25 +254,29 @@ public class LoginActivity extends AppCompatActivity {
                     intentRoleSelection.putExtra("name", user.getName());
                     startActivity(intentRoleSelection);
                 } else {
-//                    Toast.makeText(LoginActivity.this, user.getRole(),
-//                            Toast.LENGTH_SHORT).show();
                     if (user.getRole().equals("Manager")) {
                         if (user.getTripID().equals("")){
                             intentManager.putExtra("phone", user.getPhone());
+                            intentManager.putExtra("role", user.getRole());
                             startActivity(intentManager);
                         } else {
                             intentManagerMain.putExtra("tripID", user.getTripID());
+                            intentManagerMain.putExtra("role", user.getRole());
                             startActivity(intentManagerMain);
                         }
                     } else { //Not manager and not empty = participant
-                        if (user.getTripID() != ""){ //not in any trip -> selection
+                        if (user.getTripID().equals("")){ //not in any trip -> selection
+                            intentParticipantNotInTrip.putExtra("tripID", user.getTripID());
                             intentParticipantNotInTrip.putExtra("phone", user.getPhone());
                             intentParticipantNotInTrip.putExtra("name", user.getName());
+                            intentParticipantNotInTrip.putExtra("role", user.getRole());
                             startActivity(intentParticipantNotInTrip);
                         }
                         else{
+                            intentParticipantInTrip.putExtra("tripID", user.getTripID());
                             intentParticipantInTrip.putExtra("phone", user.getPhone());
                             intentParticipantInTrip.putExtra("name", user.getName());
+                            intentParticipantInTrip.putExtra("role", user.getRole());
                             startActivity(intentParticipantInTrip);
                         }
                     }
@@ -281,7 +285,6 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
     }

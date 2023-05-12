@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="15dp"
-            android:text="02/10"
+            android:text="0/0"
             android:textColor="@color/text"
             android:textSize="20sp"/>
     </RelativeLayout>

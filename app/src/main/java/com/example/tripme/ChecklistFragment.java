@@ -56,13 +56,17 @@ public class ChecklistFragment extends Fragment {
         textViewCount = (TextView) view.findViewById(R.id.textViewCount);
         //Set trip name
         textViewTripName = (TextView) view.findViewById(R.id.textViewTripName);
+    if(intent.getExtras().getString("role").equals("Manager")) {
         myRef.child(tripID).child("name").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 textViewTripName.setText(" " + snapshot.getValue().toString() + ":");
             }
+
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {}});
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
 
         // Set the adapter
         checklist = view.findViewById(R.id.checklist);
@@ -77,19 +81,20 @@ public class ChecklistFragment extends Fragment {
                 count = 0;
                 presentCount = 0;
                 participantList.clear();
-                for (DataSnapshot dsp : snapshot.getChildren()){
-                    count ++;
+                for (DataSnapshot dsp : snapshot.getChildren()) {
+                    count++;
                     participantList.add(new Participant(dsp.child("participantName").getValue().toString(),
                             dsp.child("participantRole").getValue().toString(),
                             dsp.child("participantPhone").getValue().toString()));
-                    if (dsp.child("participantRole").getValue().equals("Present")){
-                        presentCount ++;
+                    if (dsp.child("participantRole").getValue().equals("Present")) {
+                        presentCount++;
                     }
                     checklist.invalidateViews();
                     phonelist.invalidateViews();
                     textViewCount.setText("Present: " + presentCount + "/" + count);
                 }
             }
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
             }
@@ -122,7 +127,7 @@ public class ChecklistFragment extends Fragment {
                 getActivity().finish();
             }
         });
+    }
         return view;
     }
-
 }
