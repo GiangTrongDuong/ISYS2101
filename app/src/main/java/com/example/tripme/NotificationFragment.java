@@ -1,14 +1,9 @@
 package com.example.tripme;
 
-import static android.content.Context.NOTIFICATION_SERVICE;
-
-import android.Manifest;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -20,19 +15,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 
-import com.example.tripme.databinding.FragmentChecklistBinding;
 import com.example.tripme.databinding.FragmentNotificationBinding;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -76,8 +66,8 @@ public class NotificationFragment extends Fragment {
 //        textView.setText(format.format(currentTime));
         editText = view.findViewById(R.id.editText);
         btn = view.findViewById(R.id.btn);
-        //TODO: if role is participant -> hide the editText and the send button
 
+        //TODO: if role is participant -> hide the editText and the send button
         if(false){
             editText.setVisibility(View.INVISIBLE);
             btn.setVisibility(View.INVISIBLE);
