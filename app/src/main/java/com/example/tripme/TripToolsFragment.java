@@ -10,7 +10,6 @@ import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.tripme.databinding.FragmentChecklistBinding;
 import com.example.tripme.databinding.FragmentTripToolsBinding;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -50,6 +49,8 @@ public class TripToolsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 //Go to the page
+                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                startActivity(intent);
             }
         });
 
