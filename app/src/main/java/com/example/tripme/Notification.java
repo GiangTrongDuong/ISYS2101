@@ -5,6 +5,9 @@ public class Notification {
     String notiTime;
     String notiText;
 
+    public Notification(){
+
+    }
     public Notification(String no, String time, String text) {
         this.notiNo = no;
         this.notiTime = time;
@@ -21,5 +24,8 @@ public class Notification {
 
     public String getNotiText() {
         return notiText;
+    }
+    public String toString(){
+        return "[" + notiTime + "]" + " \n" + notiText;
     }
 }

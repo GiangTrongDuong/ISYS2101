@@ -3,6 +3,7 @@ package com.example.tripme;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -87,6 +88,9 @@ public class TripJoiningActivity extends AppCompatActivity {
                     "Absent",
                     uid));
             //TODO: Go to participant main page
+            Intent toMain = new Intent(TripJoiningActivity.this, MainActivity.class);
+            toMain.putExtra("role", "Participant");
+            startActivity(toMain);
         } else {
             Toast.makeText(TripJoiningActivity.this, "Invalid Code.",
                     Toast.LENGTH_SHORT).show();
