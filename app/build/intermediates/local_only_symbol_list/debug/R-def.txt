@@ -14,7 +14,11 @@ color white
 dimen fab_margin
 dimen text_margin
 drawable arrow_back
+drawable baseline_attractions_24
+drawable baseline_local_hospital_24
 drawable baseline_logout_24
+drawable baseline_restaurant_24
+drawable baseline_shopping_cart_24
 drawable bottom_navbar_color
 drawable box
 drawable check_circle
@@ -42,6 +46,7 @@ font african
 font cinderela
 font jurrasic
 id advice
+id attraction
 id auto_complete_txt
 id box1
 id box2
@@ -75,6 +80,7 @@ id editTextTripName
 id feelsLike
 id gridView
 id gridlistLayout
+id hospital
 id liAskOTP
 id liInput
 id liInput2
@@ -82,8 +88,10 @@ id liLinearOTP
 id liOTP
 id liResendOTP
 id liSubmitOTP
+id linear
 id linearLayout_gridtableLayout
 id location
+id map
 id maxTemp
 id minTemp
 id name
@@ -101,9 +109,11 @@ id otp_edit_box3
 id otp_edit_box4
 id parent
 id recyclerViewNew
+id restaurant
 id role
 id root_otp_layout
 id seatLegendLayout
+id shop
 id temperature
 id text
 id textView2
@@ -125,6 +135,7 @@ id weather
 id webView
 layout activity_login
 layout activity_main
+layout activity_maps
 layout activity_news_pages
 layout activity_news_website
 layout activity_role_selection
@@ -160,6 +171,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_first_fragment
 string hello_second_fragment
+string map_api_key
 string next
 string previous
 string project_id

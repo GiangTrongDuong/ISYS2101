@@ -25,11 +25,12 @@
     <string name="google_storage_bucket" translatable="false">myapp-4d5c1.appspot.com</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="map_api_key">AIzaSyAtNGbfrfSWHEkrqbtinsHnjkbhfdLWpy8</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">myapp-4d5c1</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps">TripMap</string>
     <string name="title_activity_trip_creation">TripCreationActivity</string>
     <string name="title_checklist">Checklist</string>
     <string name="title_notification">Notification</string>

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tripme.app-mergeDebugResources-45:/values-v17/values-v17.xml",
+            "outputFile": "com.example.tripme.app-mergeDebugResources-46:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\62e52f6058d38fb667988d3bba01e81e\\transformed\\appcompat-1.4.1\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\Zing\\.gradle\\caches\\transforms-3\\be7322c50bc7e920eca1996e5bd972e3\\transformed\\appcompat-1.4.1\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
