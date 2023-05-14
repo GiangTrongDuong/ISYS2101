@@ -3337,6 +3337,7 @@ id list_item
 id locale
 id location
 id ltr
+id managerLayout
 id map
 id masked
 id match_constraint

@@ -91,6 +91,7 @@ id liSubmitOTP
 id linear
 id linearLayout_gridtableLayout
 id location
+id managerLayout
 id map
 id maxTemp
 id minTemp

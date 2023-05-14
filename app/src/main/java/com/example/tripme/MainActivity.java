@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity{
             item.setVisible(false);
             myMenu.setSelectedItemId(R.id.navigation_notification);
             this.invalidateOptionsMenu();
-        } else {
+        } else if (role.equals("")){
             finish();
         }
     }

@@ -1,290 +1,294 @@
 [
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_fragment_notification_item.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/fragment_notification_item.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_news.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\news.jpg"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_baseline_attractions_24.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/baseline_attractions_24.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.example.tripme.app-main-50:/menu/bottom_nav_menu.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_layout_top.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\layout_top.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_cross_circle.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/cross_circle.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\font_cinderela.ttf.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\font\\cinderela.ttf"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_bottom_navbar_color.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/bottom_navbar_color.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_weather.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\weather.png"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/font_cinderela.ttf.flat",
-        "source": "com.example.tripme.app-main-50:/font/cinderela.ttf"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_weather_button.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\weather_button.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_news_pages.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_news_pages.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_baseline_shopping_cart_24.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/baseline_shopping_cart_24.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_icon.png.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\icon.png"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_weather_button.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/weather_button.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_baseline_attractions_24.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\baseline_attractions_24.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_map.jpg.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/map.jpg"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_box.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/box.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_trip_creation.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_trip_creation.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-pngs-43:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_role_selection.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_role_selection.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\font_jurrasic.ttf.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\font\\jurrasic.ttf"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_list_city.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/list_city.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\font_african.ttf.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\font\\african.ttf"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.tripme.app-pngs-43:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_weather.png.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/weather.png"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_main.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_main.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_baseline_shopping_cart_24.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\baseline_shopping_cart_24.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_profile_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\profile_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_fragment_trip_tools.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/fragment_trip_tools.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_map_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\map_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_news.jpg.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/news.jpg"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-anydpi-v33\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_icon.png.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/icon.png"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_fragment_checklist_list.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\fragment_checklist_list.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_news_pages.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_news_pages.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/xml_backup_rules.xml.flat",
-        "source": "com.example.tripme.app-main-50:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_layout_bot.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\layout_bot.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_baseline_logout_24.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/baseline_logout_24.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_map_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/map_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_fragment_checklist.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\fragment_checklist.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_fragment_checklist.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/fragment_checklist.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_bottom_navbar_color.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\bottom_navbar_color.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.tripme.app-main-50:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_weather_list_viewer.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_weather_list_viewer.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_login.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_login.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_maps.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_maps.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/font_jurrasic.ttf.flat",
-        "source": "com.example.tripme.app-main-50:/font/jurrasic.ttf"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_grid_element.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\grid_element.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_check_circle.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/check_circle.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_check_circle.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\check_circle.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_weather_forecast_details.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_weather_forecast_details.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_phone_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\phone_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_trip_joining.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_trip_joining.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_fragment_trip_tools.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\fragment_trip_tools.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_fragment_profile.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/fragment_profile.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_notification_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\notification_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_layout_bot.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/layout_bot.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_baseline_local_hospital_24.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\baseline_local_hospital_24.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_trip_creation.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_trip_creation.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_notification_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/notification_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_role_selection.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_role_selection.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_baseline_local_hospital_24.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/baseline_local_hospital_24.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_weather_forecast.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_weather_forecast.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_quit_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/quit_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_news_item.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\news_item.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/xml_network_security_config.xml.flat",
-        "source": "com.example.tripme.app-main-50:/xml/network_security_config.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_signup.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_fragment_checklist_phone.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/fragment_checklist_phone.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_baseline_restaurant_24.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\baseline_restaurant_24.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_fragment_notification.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/fragment_notification.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_phone_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/phone_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_news_website.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_news_website.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_cross_circle.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\cross_circle.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-anydpi-v33_ic_launcher.xml.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-anydpi-v33/ic_launcher.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_list_city.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\list_city.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_grid_element.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/grid_element.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_edit_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\edit_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_tools_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/tools_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_edit_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/edit_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_fragment_notification_item.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\fragment_notification_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "com.example.tripme.app-merged_res-48:/layout_activity_maps.xml.flat",
         "source": "com.example.tripme.app-main-50:/layout/activity_maps.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_weather_list_viewer.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_weather_list_viewer.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_map.jpg.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\map.jpg"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_weather_forecast_details.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_weather_forecast_details.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/font_african.ttf.flat",
-        "source": "com.example.tripme.app-main-50:/font/african.ttf"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_arrow_back.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\arrow_back.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_textbox.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\textbox.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_profile_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/profile_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\navigation_nav_bar.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\navigation\\nav_bar.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_news_website.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_news_website.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_fragment_notification.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\fragment_notification.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_news_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/news_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.tripme.app-main-50:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_weather_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\weather_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_textbox.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/textbox.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_box.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\box.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_fragment_checklist_list.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/fragment_checklist_list.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_news_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\news_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_news_item.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/news_item.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_baseline_logout_24.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\baseline_logout_24.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_trip_joining.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_trip_joining.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_arrow_back.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/arrow_back.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_weather_forecast.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_weather_forecast.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_quit_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\quit_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/navigation_nav_bar.xml.flat",
-        "source": "com.example.tripme.app-main-50:/navigation/nav_bar.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_fragment_checklist_phone.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\fragment_checklist_phone.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_layout_top.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/layout_top.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\drawable_tools_icon.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\drawable\\tools_icon.xml"
     },
     {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_baseline_restaurant_24.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/baseline_restaurant_24.xml"
-    },
-    {
-        "merged": "com.example.tripme.app-merged_res-48:/layout_activity_signup.xml.flat",
-        "source": "com.example.tripme.app-main-50:/layout/activity_signup.xml"
-    },
-    {
-        "merged": "com.example.tripme.app-merged_res-48:/drawable_weather_icon.xml.flat",
-        "source": "com.example.tripme.app-main-50:/drawable/weather_icon.xml"
+        "merged": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-merged_res-48:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\HP\\.gradle\\daemon\\7.5\\com.example.tripme.app-main-50:\\layout\\activity_main.xml"
     }
 ]
