@@ -3,6 +3,7 @@
     <string name="title_checklist">Checklist</string>
     <string name="title_profile">Profile</string>
     <string name="title_activity_trip_creation">TripCreationActivity</string>
+    <string name="title_qr">QR Code</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

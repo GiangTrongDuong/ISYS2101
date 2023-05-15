@@ -32,12 +32,16 @@ public class MainActivity extends AppCompatActivity{
         NavigationUI.setupWithNavController(binding.navView, navController);
         SingletonAppTime appTime = new SingletonAppTime(); //app time recorded
        if (role.equals("Participant")) {
-            MenuItem item = myMenu.getMenu().findItem(R.id.navigation_checklist);
-            item.setVisible(false);
-            myMenu.setSelectedItemId(R.id.navigation_notification);
-            this.invalidateOptionsMenu();
-        } else if (role.equals("")){
+           //Participant cannot see: checklist
+           //hide checklist
+           MenuItem item = myMenu.getMenu().findItem(R.id.navigation_checklist);
+           item.setVisible(false);
+           myMenu.setSelectedItemId(R.id.navigation_notification);
+           this.invalidateOptionsMenu();
+        } else if (role.equals(""))
+        {
             finish();
         }
     }
+
 }
