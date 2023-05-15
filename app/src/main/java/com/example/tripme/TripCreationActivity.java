@@ -60,6 +60,7 @@ public class TripCreationActivity extends AppCompatActivity {
         myRef.child(id).child("managerPhone").setValue(mAuth.getCurrentUser().getPhoneNumber());
         Intent intentManagerMain = new Intent(this, MainActivity.class);
         intentManagerMain.putExtra("tripID", id);
+        intentManagerMain.putExtra("role", getIntent().getExtras().getString("role"));
         startActivity(intentManagerMain);
     }
 }

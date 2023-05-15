@@ -115,20 +115,25 @@ public class NotificationFragment extends Fragment {
                         //decide if this notification is worth alerting
                 }
                 //get last notification
-                Notification n = notifList.get(0);
-                System.out.println("=============== list = " + notifList);
-                System.out.println("===============last noti = " + n.toString());
-                System.out.println("===============app time  = " + appTime);
-                try {
-                    notiDate = sdf.parse(n.getNotiTime());
-                } catch (ParseException e) {
-                    System.out.println("============parse" + e);
-                }
-                if(appDate.compareTo(notiDate) < 0){ //noti is after before app launch
-                    if(role.equals("Participant")) {
-                        sendNotification(n.getNotiText(), n.getNotiTime(), context);
+                try{
+                    Notification n = notifList.get(0);
+                    System.out.println("=============== list = " + notifList);
+                    System.out.println("===============last noti = " + n.toString());
+                    System.out.println("===============app time  = " + appTime);
+                    try {
+                        notiDate = sdf.parse(n.getNotiTime());
+                    } catch (ParseException e) {
+                        System.out.println("============parse" + e);
                     }
+                    if(appDate.compareTo(notiDate) < 0){ //noti is after before app launch
+                        if(role.equals("Participant")) {
+                            sendNotification(n.getNotiText(), n.getNotiTime(), context);
+                        }
+                    }
+                } catch (Exception e){
+                    System.out.println("No notification" + e);
                 }
+
                     listView.invalidateViews();
                     firstTime = false;
             }

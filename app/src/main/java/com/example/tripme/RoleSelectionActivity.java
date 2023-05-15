@@ -32,6 +32,7 @@ public class RoleSelectionActivity extends AppCompatActivity {
             public void onClick(View view) {
                 myRef.child(phone).child("role").setValue("Manager");
                 i.putExtra("phone", mAuth.getCurrentUser().getPhoneNumber());
+                i.putExtra("role", "Mananger");
                 startActivity(i);
             }
         });
@@ -41,6 +42,7 @@ public class RoleSelectionActivity extends AppCompatActivity {
                 myRef.child(phone).child("role").setValue("Participant");
                 intent.putExtra("phone", phone);
                 intent.putExtra("name", getIntent().getExtras().getString("name"));
+                intent.putExtra("role", "Participant");
                 startActivity(intent);
             }
         });
