@@ -89,10 +89,10 @@ public class ChecklistFragment extends Fragment {
                     if (dsp.child("participantRole").getValue().equals("Present")) {
                         presentCount++;
                     }
-                    checklist.invalidateViews();
-                    phonelist.invalidateViews();
                     textViewCount.setText("Present: " + presentCount + "/" + count);
                 }
+                checklist.invalidateViews();
+                phonelist.invalidateViews();
             }
 
             @Override

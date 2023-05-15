@@ -178,7 +178,7 @@ public class NotificationFragment extends Fragment {
 
             notificationManager.createNotificationChannel(channel);
             if(notificationManager.areNotificationsEnabled()){
-                Toast.makeText(context, "Missing permission", Toast.LENGTH_SHORT).show();
+                System.out.println("Missing permission");
             }
         }
         notificationManager.notify(0, notificationBuilder.build());
