@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tripme.app-mergeDebugResources-46:/values-land/values-land.xml",
+            "outputFile": "com.example.tripme.app-mergeDebugResources-47:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\07ab5e9db04d3d491ed144802af888e4\\transformed\\material-1.5.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\3f595417448770fcb1152660eed2d5db\\transformed\\material-1.5.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,6 +23,16 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\e1d3103fd818ab83d70613fe9962a4aa\\transformed\\appcompat-1.4.1\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
                     "source": "C:\\Users\\HP\\AndroidStudioProjects\\TripMe\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1",
@@ -37,16 +47,6 @@
                         "startOffsets": "264",
                         "endColumns": "41",
                         "endOffsets": "301"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\be7322c50bc7e920eca1996e5bd972e3\\transformed\\appcompat-1.4.1\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

@@ -53,30 +53,31 @@ public class QRCodeFragment extends Fragment {
     private SurfaceView sv;
     private String intentData = "";
     private FirebaseAuth mAuth;
-    private String role;
+    private String role, tripID;
     BarcodeDetector barcodeDetector;
     CameraSource cameraSource;
-    String tripID = getActivity().getIntent().getExtras().getString("tripID");
+
 
     ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-                    if (result.getResultCode() == Activity.RESULT_OK) {
-                        Intent data = result.getData();
-                        String scannedPhone = data.getStringExtra("SCAN_RESULT");
+        new ActivityResultContracts.StartActivityForResult(),
+        new ActivityResultCallback<ActivityResult>() {
+            @Override
+            public void onActivityResult(ActivityResult result) {
+                if (result.getResultCode() == Activity.RESULT_OK) {
+                    Intent data = result.getData();
+                    String scannedPhone = data.getStringExtra("SCAN_RESULT");
 //                        System.out.println("&&&&&phone = " + scannedPhone);
-                        Toast.makeText(getActivity(), "Participant " + scannedPhone + " marked as Arrived",
-                                Toast.LENGTH_SHORT).show();
-                        tvResult.setText("Arrived: " + scannedPhone);
-                        FirebaseDatabase.getInstance().getReference().child("trip").
-                                child(tripID).child("participant").child(scannedPhone).
-                                child("participantRole").setValue("Present");
+                    Toast.makeText(getActivity(), "Participant " + scannedPhone + " marked as Arrived",
+                            Toast.LENGTH_SHORT).show();
+                    tvResult.setText("Arrived: " + scannedPhone);
+                    FirebaseDatabase.getInstance().getReference().child("trip").
+                            child(tripID).child("participant").child(scannedPhone).
+                            child("participantRole").setValue("Present");
 
-                    }
                 }
-            });
+            }
+        }
+    );
 
     public QRCodeFragment(){
 
@@ -96,7 +97,7 @@ public class QRCodeFragment extends Fragment {
         //Variables
         View view = inflater.inflate(R.layout.fragment_qr_code, container, false);
         binding = FragmentQrCodeBinding.inflate(inflater, container, false);
-
+        tripID = getActivity().getIntent().getExtras().getString("tripID");
         role = getActivity().getIntent().getExtras().getString("role");
         LinearLayout llParticipant = view.findViewById(R.id.llParticipant);
         LinearLayout llManager = view.findViewById(R.id.llManager);

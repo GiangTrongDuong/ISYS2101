@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tripme.app-mergeDebugResources-46:/values-v16/values-v16.xml",
+            "outputFile": "com.example.tripme.app-mergeDebugResources-47:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\be7322c50bc7e920eca1996e5bd972e3\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\c06f381e68030f8c8947a453fd1d38f8\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\e1d3103fd818ab83d70613fe9962a4aa\\transformed\\appcompat-1.4.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\c38c9897533ea665b0378c3de92802fc\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

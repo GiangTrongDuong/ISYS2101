@@ -17,7 +17,7 @@
 
     <item
         android:id="@+id/navigation_qrCode"
-        android:icon="@drawable/profile_icon"
+        android:icon="@drawable/qr_code_icon"
         android:title="@string/title_qr" />
 
 

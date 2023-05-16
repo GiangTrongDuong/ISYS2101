@@ -36,6 +36,7 @@ drawable news_icon
 drawable notification_icon
 drawable phone_icon
 drawable profile_icon
+drawable qr_code_icon
 drawable quit_icon
 drawable textbox
 drawable tools_icon
@@ -56,7 +57,9 @@ id btn
 id btnEmail
 id btnName
 id btnPhone
+id btnScanQR
 id button
+id buttonCheckAll
 id buttonCreate
 id buttonJoin
 id buttonLogin
@@ -90,6 +93,8 @@ id liResendOTP
 id liSubmitOTP
 id linear
 id linearLayout_gridtableLayout
+id llManager
+id llParticipant
 id location
 id managerLayout
 id map
@@ -102,6 +107,7 @@ id nav_view
 id navigation_checklist
 id navigation_notification
 id navigation_profile
+id navigation_qrCode
 id navigation_triptool
 id notificationList
 id otp_edit_box1
@@ -127,6 +133,10 @@ id textViewTripCode
 id textViewTripID
 id textViewTripName
 id time
+id tvInstruction1
+id tvInstruction2
+id tvQRscanDescription
+id tvResult
 id txtContent
 id txtDate
 id txtTemp
@@ -134,6 +144,7 @@ id txtTime
 id txtTitle
 id weather
 id webView
+id yourQRcode
 layout activity_login
 layout activity_main
 layout activity_maps
@@ -152,6 +163,7 @@ layout fragment_checklist_phone
 layout fragment_notification
 layout fragment_notification_item
 layout fragment_profile
+layout fragment_qr_code
 layout fragment_trip_tools
 layout grid_element
 layout list_city
@@ -182,6 +194,7 @@ string title_activity_trip_creation
 string title_checklist
 string title_notification
 string title_profile
+string title_qr
 string tools
 style Theme.TripMe
 style Theme.TripMe.AppBarOverlay

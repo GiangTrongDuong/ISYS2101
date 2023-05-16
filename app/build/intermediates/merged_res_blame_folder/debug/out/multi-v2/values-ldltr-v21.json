@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tripme.app-mergeDebugResources-46:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.example.tripme.app-mergeDebugResources-47:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\be7322c50bc7e920eca1996e5bd972e3\\transformed\\appcompat-1.4.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\e1d3103fd818ab83d70613fe9962a4aa\\transformed\\appcompat-1.4.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -54,24 +54,29 @@
                 android:text="Press the button to launch the camera and scan QR code!"
                 android:gravity="center_horizontal"/>
 
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/btnScanQR"
+                android:layout_width="162dp"
+                android:layout_height="87dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/box_light"
+                android:text="Scan QR"
+                android:textColor="@color/text"
+                android:textSize="20sp" />
+
             <TextView
+                android:layout_marginTop="20dp"
                 android:id="@+id/tvInstruction2"
                 android:paddingTop="20dp"
                 android:paddingBottom="40dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="The participant will be marked as 'Arrived' \non your checklist"
+                android:text="Scanned participant will be marked as 'Arrived' \non your checklist"
                 android:gravity="center_horizontal"
                 android:layout_gravity="center_horizontal"/>
 
-            <Button
-                android:id="@+id/btnScanQR"
-                android:backgroundTint="@color/box_light"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Scan QR"/>
             <TextView
                 android:id="@+id/tvResult"
                 android:layout_width="wrap_content"
@@ -79,7 +84,7 @@
                 android:paddingTop="40dp"
                 android:textSize="30sp"
                 android:layout_gravity="center_horizontal"
-                android:text="Newly scanned phone number"/>
+                android:text=""/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
