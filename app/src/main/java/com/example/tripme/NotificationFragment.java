@@ -56,6 +56,7 @@ public class NotificationFragment extends Fragment {
     private boolean firstTime = true;
     private Date appDate;
     private Date notiDate;
+    private int currentID;
     public NotificationFragment() {
     }
 
@@ -102,6 +103,9 @@ public class NotificationFragment extends Fragment {
         catch (Exception e){
             System.out.println("" + e);
         }
+        //get the last notification ID
+        SingletonLastNoti ln = SingletonLastNoti.getInstance();
+        int lastNotiID = ln.getNotiID();
         myRef.child(tripID).child("notification").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -112,6 +116,12 @@ public class NotificationFragment extends Fragment {
                     notifList.add(new Notification(dsp.child("notiNo").getValue().toString(),
                             dsp.child("notiTime").getValue().toString(),
                             dsp.child("notiText").getValue().toString()));
+                    try{
+                        currentID = Integer.getInteger(dsp.getKey());
+                    }
+                    catch (Exception e){
+                        System.out.println("=======error getting noti key===== " + e);
+                    }
                         //decide if this notification is worth alerting
                 }
                 //get last notification
@@ -126,8 +136,12 @@ public class NotificationFragment extends Fragment {
                         System.out.println("============parse" + e);
                     }
                     if(appDate.compareTo(notiDate) < 0){ //noti is after before app launch
-                        if(role.equals("Participant")) {
-                            sendNotification(n.getNotiText(), n.getNotiTime(), context);
+                        if(role.equals("Participant")) { //only alert participants
+                            if(currentID != lastNotiID){
+                                sendNotification(n.getNotiText(), n.getNotiTime(), context);
+                                ln.setNotiID(currentID);
+                                ln.setNotiTime(n.getNotiTime());
+                            }
                         }
                     }
                 } catch (Exception e){
@@ -160,7 +174,7 @@ public class NotificationFragment extends Fragment {
                 new NotificationCompat.Builder(context, channelId)
                         .setSmallIcon(R.drawable.ic_launcher_background)
                         .setLargeIcon(bitmap)
-                        .setContentTitle("New notification at " + messageTime)
+                        .setContentTitle("From TripME at " + messageTime)
                         .setContentText(messageBody)
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)

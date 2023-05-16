@@ -30,7 +30,9 @@ public class MainActivity extends AppCompatActivity{
         String role = getIntent().getExtras().getString("role");
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupWithNavController(binding.navView, navController);
+        //Singleton classes init
         SingletonAppTime appTime = new SingletonAppTime(); //app time recorded
+//      SingletonLastNoti lastNoti = new SingletonLastNoti(); //starts recording notification
        if (role.equals("Participant")) {
            //Participant cannot see: checklist
            //hide checklist

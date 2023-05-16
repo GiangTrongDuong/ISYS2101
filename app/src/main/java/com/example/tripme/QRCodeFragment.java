@@ -67,12 +67,20 @@ public class QRCodeFragment extends Fragment {
                     Intent data = result.getData();
                     String scannedPhone = data.getStringExtra("SCAN_RESULT");
 //                        System.out.println("&&&&&phone = " + scannedPhone);
-                    Toast.makeText(getActivity(), "Participant " + scannedPhone + " marked as Arrived",
-                            Toast.LENGTH_SHORT).show();
-                    tvResult.setText("Arrived: " + scannedPhone);
-                    FirebaseDatabase.getInstance().getReference().child("trip").
-                            child(tripID).child("participant").child(scannedPhone).
-                            child("participantRole").setValue("Present");
+                    try{
+                        FirebaseDatabase.getInstance().getReference().child("trip").
+                                child(tripID).child("participant").child(scannedPhone).
+                                child("participantRole").setValue("Present");
+                        Toast.makeText(getActivity(), "Participant " + scannedPhone + " marked as Arrived",
+                                Toast.LENGTH_SHORT).show();
+                        tvResult.setText("Arrived: " + scannedPhone);
+                    }
+                    catch (Exception e){
+                        System.out.println("============== " + scannedPhone + " ===========" + e);
+                        Toast.makeText(getActivity(), "Error occurred when scanning number " + scannedPhone,
+                                Toast.LENGTH_SHORT).show();
+                    }
+
 
                 }
             }
