@@ -7,7 +7,6 @@ import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
@@ -15,8 +14,8 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.example.tripme.databinding.ActivityMapsBinding;
 import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -177,19 +176,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LocationCallback locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(@NonNull LocationResult locationResult) {
-                Toast.makeText(getApplicationContext(),"location result is=" + locationResult,
-                        Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(),"location result is=" + locationResult,
+//                        Toast.LENGTH_LONG).show();
                 if(locationResult == null){
-                    Toast.makeText(getApplicationContext(),"Current location is null",
-                            Toast.LENGTH_LONG).show();
+//                    Toast.makeText(getApplicationContext(),"Current location is null",
+//                            Toast.LENGTH_LONG).show();
                     return;
                 }
 
                 for(Location location:locationResult.getLocations()){
 
                     if(location!=null){
-                        Toast.makeText(getApplicationContext(),"Current location" + location.getLongitude(),
-                                Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getApplicationContext(),"Current location" + location.getLongitude(),
+//                                Toast.LENGTH_LONG).show();
                     }
                 }
             }
