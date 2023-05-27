@@ -49,9 +49,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
         <TextView
             android:id="@+id/textViewCount"
             android:layout_width="wrap_content"
@@ -60,7 +63,26 @@
             android:layout_marginBottom="15dp"
             android:text="0/0"
             android:textColor="@color/text"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCheckAll"
+            android:layout_width="124dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/box_light"
+            android:text="Uncheck all"
+            android:textColor="@color/background"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"

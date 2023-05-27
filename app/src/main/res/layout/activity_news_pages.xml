@@ -4,11 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.newsreadertest.NewsPages">
+    tools:context="com.example.tripme.NewsPages"
+    android:background="@color/background"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/recyclerViewNew"/>
+        android:id="@+id/recyclerViewNew"
+        android:divider="@color/background"
+        android:dividerHeight="15dp"/>
 </RelativeLayout>

@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -34,6 +35,7 @@ public class ChecklistFragment extends Fragment {
     private FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
     private DatabaseReference myRef = database.getReference("trip");
     ImageButton buttonLogout;
+    Button buttonCheckAll;
     TextView textViewTripID, textViewTripName, textViewCount;
     ListView checklist, phonelist;
     ArrayList<Participant> participantList = new ArrayList<>();
@@ -89,10 +91,10 @@ public class ChecklistFragment extends Fragment {
                     if (dsp.child("participantRole").getValue().equals("Present")) {
                         presentCount++;
                     }
-                    checklist.invalidateViews();
-                    phonelist.invalidateViews();
                     textViewCount.setText("Present: " + presentCount + "/" + count);
                 }
+                checklist.invalidateViews();
+                phonelist.invalidateViews();
             }
 
             @Override
@@ -115,6 +117,15 @@ public class ChecklistFragment extends Fragment {
                     myRef.child(tripID).child("participant").child(participantList.get(i).getParticipantPhone()).child("participantRole").setValue("Present");
                 } else {
                     myRef.child(tripID).child("participant").child(participantList.get(i).getParticipantPhone()).child("participantRole").setValue("Absent");
+                }
+            }
+        });
+        buttonCheckAll = view.findViewById(R.id.buttonCheckAll);
+        buttonCheckAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (Participant p: participantList){
+                    myRef.child(tripID).child("participant").child(p.getParticipantPhone()).child("participantRole").setValue("Absent");
                 }
             }
         });

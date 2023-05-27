@@ -36,23 +36,26 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-        <RelativeLayout
+
+    <RelativeLayout
+        android:id="@+id/managerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <EditText
+            android:id="@+id/editText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
-            <EditText
-                android:id="@+id/editText"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@drawable/textbox"
-                android:gravity="top"
-                android:hint="Say what you want to notify everyone here..."
-                android:inputType="text|textMultiLine"
-                android:textColorHint="@color/text"
-                android:textSize="20sp" />
-        </RelativeLayout>
+            android:layout_height="80dp"
+            android:background="@drawable/textbox"
+            android:gravity="top"
+            android:hint="Say what you want to notify everyone here..."
+            android:inputType="text|textMultiLine"
+            android:textColorHint="@color/text"
+            android:textSize="20sp" />
+    </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +66,6 @@
                 android:id="@+id/notificationList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:dividerHeight="15dp"
                 android:divider="@color/background"/>
         </RelativeLayout>

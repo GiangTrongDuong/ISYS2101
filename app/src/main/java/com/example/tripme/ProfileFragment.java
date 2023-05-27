@@ -33,6 +33,7 @@ public class ProfileFragment extends Fragment {
     ImageButton buttonLogout;
     private FirebaseDatabase database = FirebaseDatabase.getInstance("https://myapp-4d5c1-default-rtdb.asia-southeast1.firebasedatabase.app/");
     private DatabaseReference myRef = database.getReference("user");
+    private DatabaseReference tripRef = database.getReference("trip");
     private FirebaseAuth mAuth;
     public ProfileFragment() {
     }
@@ -63,6 +64,9 @@ public class ProfileFragment extends Fragment {
                 email.setText("Email: " + snapshot.child("email").getValue().toString());
                 role.setText("Role: " + snapshot.child("role").getValue().toString());
                 tripID.setText("TripID: " + snapshot.child("tripID").getValue().toString());
+//                + "Trip manager: " +
+//                        tripRef.child(snapshot.child("tripID").getValue().toString()).
+//                        child("managerPhone").get());
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {

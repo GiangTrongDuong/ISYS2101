@@ -4,6 +4,7 @@ package com.example.tripme.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -20,6 +21,9 @@ import java.lang.String;
 public final class FragmentChecklistListBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final Button buttonCheckAll;
 
   @NonNull
   public final ImageButton buttonLogout;
@@ -40,10 +44,12 @@ public final class FragmentChecklistListBinding implements ViewBinding {
   public final TextView textViewTripName;
 
   private FragmentChecklistListBinding(@NonNull LinearLayout rootView,
-      @NonNull ImageButton buttonLogout, @NonNull ListView checklist,
-      @NonNull ListView checklistPhone, @NonNull TextView textViewCount,
-      @NonNull TextView textViewTripCode, @NonNull TextView textViewTripName) {
+      @NonNull Button buttonCheckAll, @NonNull ImageButton buttonLogout,
+      @NonNull ListView checklist, @NonNull ListView checklistPhone,
+      @NonNull TextView textViewCount, @NonNull TextView textViewTripCode,
+      @NonNull TextView textViewTripName) {
     this.rootView = rootView;
+    this.buttonCheckAll = buttonCheckAll;
     this.buttonLogout = buttonLogout;
     this.checklist = checklist;
     this.checklistPhone = checklistPhone;
@@ -79,6 +85,12 @@ public final class FragmentChecklistListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.buttonCheckAll;
+      Button buttonCheckAll = ViewBindings.findChildViewById(rootView, id);
+      if (buttonCheckAll == null) {
+        break missingId;
+      }
+
       id = R.id.buttonLogout;
       ImageButton buttonLogout = ViewBindings.findChildViewById(rootView, id);
       if (buttonLogout == null) {
@@ -115,8 +127,8 @@ public final class FragmentChecklistListBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentChecklistListBinding((LinearLayout) rootView, buttonLogout, checklist,
-          checklistPhone, textViewCount, textViewTripCode, textViewTripName);
+      return new FragmentChecklistListBinding((LinearLayout) rootView, buttonCheckAll, buttonLogout,
+          checklist, checklistPhone, textViewCount, textViewTripCode, textViewTripName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

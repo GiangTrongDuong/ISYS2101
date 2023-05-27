@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tripme.app-mergeDebugResources-46:/values-v24/values-v24.xml",
+            "outputFile": "com.example.tripme.app-mergeDebugResources-47:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Zing\\.gradle\\caches\\transforms-3\\be7322c50bc7e920eca1996e5bd972e3\\transformed\\appcompat-1.4.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\e1d3103fd818ab83d70613fe9962a4aa\\transformed\\appcompat-1.4.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Zing\\.gradle\\caches\\transforms-3\\ada90e4a97f25aa89a94f4a2ddcaa998\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\c43f6937e53b72da9dbf36c93b1138ef\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -31,7 +31,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Zing\\.gradle\\caches\\transforms-3\\07ab5e9db04d3d491ed144802af888e4\\transformed\\material-1.5.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\HP\\.gradle\\caches\\transforms-3\\3f595417448770fcb1152660eed2d5db\\transformed\\material-1.5.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

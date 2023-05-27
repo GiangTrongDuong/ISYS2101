@@ -1,14 +1,14 @@
 package com.example.tripme;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -87,9 +87,10 @@ public class TripJoiningActivity extends AppCompatActivity {
                     user_name,
                     "Absent",
                     uid));
-            //TODO: Go to participant main page
+            //Go to participant main page
             Intent toMain = new Intent(TripJoiningActivity.this, MainActivity.class);
             toMain.putExtra("role", "Participant");
+            toMain.putExtra("tripID", tripID);
             startActivity(toMain);
         } else {
             Toast.makeText(TripJoiningActivity.this, "Invalid Code.",
